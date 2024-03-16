@@ -1,11 +1,10 @@
 <%-- 
-    Document   : home2
-    Created on : Mar 6, 2024, 7:59:55 AM
+    Document   : home
+    Created on : Mar 16, 2024, 3:55:17 PM
     Author     : nalin
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
 <head>
@@ -150,3 +149,4 @@ body{
 
 </body>
 </html>
+

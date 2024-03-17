@@ -144,7 +144,7 @@ body{
     </div>
 </section>
 <jsp:include page="navigationbar.jsp" />
-
+<jsp:include page="footer.jsp" />
 
 
 </body>

@@ -38,28 +38,30 @@
                 text-align: center;
             }
             .title h4{
-                display: inline-block;
-                padding: 20px;
-                color: #fff;
-                font-size: 50px;
-                font-weight: 500;
-                letter-spacing: 1.2px;
-                word-spacing: 5px;
-                border: 1px solid rgba(255, 255, 255, 0);
-                border-radius: 15px;
-                text-transform: uppercase;
-                backdrop-filter: blur(15px);
-                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-                word-wrap: break-word;
-            }
-            .wrap .card-container{
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                margin: 40px 0;
-            }
+    display: inline-block;
+    padding: 100px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    /* Remove the following properties */
+    /* border: 1px solid rgba(255, 255, 255, 0); */
+    /* border-radius: 15px; */
+    /* backdrop-filter: blur(15px); */
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    word-wrap: break-word;
+}
+
+            .wrap .card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -80px 0 -20px; /* Adjust the margin-bottom */
+}
+
             .card-container .card{
                 position: relative;
                 width: 300px;
@@ -75,7 +77,7 @@
             .card .imBx, .imBx img{
                 width: 100%;
                 height: 100%;
-            } 
+            }
             .card .content{
                 position: absolute;
                 bottom: -160px;
@@ -143,7 +145,7 @@
         </style>
     </head>
     <body>
-        
+        <jsp:include page="navigationbar.jsp" />
         <div class="wrap">
             <div class="title">
                 <h4>Our Team</h4>
@@ -152,7 +154,7 @@
             <div class="card-container">
                 <div class="card">
                     <div class="imBx">
-                        <img src="img/t.jpg">
+                        <img src="img/tanusha.jpg">
                     </div>
                     
                     <div class="content">
@@ -174,12 +176,12 @@
                 </div>
                 <div class="card">
                     <div class="imBx">
-                        <img src="img/mn.jpg">
+                        <img src="img/manushika.jpg">
                     </div>
                     
                     <div class="content">
                         <div class="contentBx">
-                            <h3>Vinomi Rathnasekara<br><span>Technical Leader</span></h3>
+                            <h3>Manushika Rathnasekara<br><span>Technical Leader</span></h3>
                         </div>
                         <ul class="sci">
                             <li style="--i: 1">
@@ -196,7 +198,7 @@
                 </div>
                 <div class="card">
                     <div class="imBx">
-                        <img src="img/mh.jpg">
+                        <img src="img/mahima.jpg">
                     </div>
                     
                     <div class="content">
@@ -218,7 +220,7 @@
                 </div>
                 <div class="card">
                     <div class="imBx">
-                        <img src="img/j.jpg">
+                        <img src="img/jayathu.jpg">
                     </div>
                     
                     <div class="content">
@@ -240,7 +242,7 @@
                 </div>
                 <div class="card">
                     <div class="imBx">
-                        <img src="img/s.jpg">
+                        <img src="img/sakuni.jpg">
                     </div>
                     
                     <div class="content">

@@ -6,26 +6,106 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        <style>
-            *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body{
-            background: url("img/home.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        </style>
-    </head>
-    <body>
-       <jsp:include page="navigationbar.jsp" />
-    </body>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JSP Page</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: url("img/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+}
+
+/* Styling for radio buttons */
+.radio-container {
+    position: relative; /* Set position to relative for the container */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Increase margin-bottom for spacing between sections */
+    margin-top: 150px; /* Adjust margin-top to bring the options downwards */
+}
+
+.radio-container input[type="radio"] {
+    position: absolute; /* Set position to absolute */
+    opacity: 0; /* Hide the radio button */
+}
+
+.radio-container label {
+    cursor: pointer;
+    margin-right: 20px; /* Adjust margin-right for spacing between images */
+    display: flex; /* Add display flex to align items */
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center; /* Align items in the center */
+}
+
+.radio-container img {
+    width: 250px; /* Adjust the width of the image */
+    height: 250px; /* Maintain aspect ratio */
+    border: 2px solid transparent;
+    border-radius: 50%; /* Make the image circular */
+    transition: border-color 0.3s ease;
+}
+
+.radio-container input[type="radio"]:checked + label img {
+    border-color: #000; /* Change border color when radio button is checked */
+}
+
+.radio-container label span {
+    margin-top: 20px; /* Adjust spacing between the image and the span */
+    color: white; /* Set font color to white */
+    font-size: 18px; /* Increase font size of option names */
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+</style>
+</head>
+<body>
+
+<jsp:include page="navigationbar.jsp" />
+
+<section class="radio-container">
+    <div>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">
+            <img src="img/claytime.jpeg" alt="Option 1">
+            <span>Clay tile</span> <!-- Text under the image -->
+        </label>
+    </div>
+
+    
+        <input type="radio" id="option2" name="options" value="option2">
+        <label for="option2">
+            <img src="img/cementroofing.jpg" alt="Option 2">
+            <span>Cement Roofing Sheet</span> <!-- Text under the image -->
+        </label>
+    
+
+    
+        <input type="radio" id="option3" name="options" value="option3">
+        <label for="option3">
+            <img src="img/zincroofing.jpg" alt="Option 3">
+            <span>Zinc Aluminium Roofing Sheet</span> <!-- Text under the image -->
+        </label>
+</section>
+
+<footer>
+    <jsp:include page="footer.jsp" />
+</footer>
+
+</body>
 </html>

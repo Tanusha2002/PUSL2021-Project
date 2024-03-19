@@ -29,14 +29,6 @@ public class User {
         this.password = password;
     }
 
-    public User(String fname, String lname, String username, String email, String password) {
-        this.fname = fname;
-        this.lname = lname;
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
-    
     public User(String email, String password) {
         this.email = email;
         this.password = password;

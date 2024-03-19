@@ -12,13 +12,11 @@ import java.sql.SQLException;
  *
  * @author Tanusha
  */
-public class dbconnection {
-    
+public class connection {
     private static Connection con;
-    
     public static Connection getConnection(){
         try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quantity_estimator","root","PUSL2021");
         }
         catch(ClassNotFoundException | SQLException e){

@@ -315,31 +315,33 @@
                     <div class="top">
                         <header>Sign Up</header>
                     </div>
-                    <div class="two-forms">
+                    <form action="" method="post">
+                        <div class="two-forms">
+                            <div class="input-box">
+                                <input type="text" class="input-field" placeholder="Firstname" name="fname" required>
+                                <i class="bx bx-user"></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" class="input-field" placeholder="Lastname" name="lname">
+                                <i class="bx bx-user"></i>
+                            </div>
+                        </div>
                         <div class="input-box">
-                            <input type="text" class="input-field" placeholder="Firstname">
+                            <input type="text" class="input-field" placeholder="Username" name="username" required>
                             <i class="bx bx-user"></i>
                         </div>
                         <div class="input-box">
-                            <input type="text" class="input-field" placeholder="Lastname">
-                            <i class="bx bx-user"></i>
+                            <input type="email" class="input-field" placeholder="Email" name="email" required>
+                            <i class="bx bx-envelope"></i>
                         </div>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username">
-                        <i class="bx bx-user"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Email">
-                        <i class="bx bx-envelope"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password">
-                        <i class="bx bx-lock-alt"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" class="submit" value="Register"> 
-                    </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Password" name="password" required>
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="Register"> 
+                        </div>
+                    </form>
                     <div class="two-col">
                         <div class="one">
                             <input type="checkbox" id="register-check">

@@ -22,7 +22,7 @@ public class UserDao {
         boolean set=false;
         
         try{
-            String query = "";
+            String query = "insert into user(firstname, lastname, username, email, password)values(?,?,?,?,?)";
             
             PreparedStatement pt = this.con.prepareStatement(query);
             pt.setString(1, user.getFname());

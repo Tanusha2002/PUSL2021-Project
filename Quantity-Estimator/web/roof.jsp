@@ -69,9 +69,46 @@ body {
     font-size: 18px; /* Increase font size of option names */
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px; /* Adjust as needed */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust as needed */
+    background-color: white; /* Set background color of the table */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: white; /* Set background color of table cells */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.editable {
+    display: inline-block;
+    width: calc(100% - 20px);
+    text-align: center;
+    border: none;
+    background: transparent;
+}
+
 footer {
     margin-top: auto; /* Push the footer to the bottom */
 }
+
 </style>
 </head>
 <body>
@@ -102,7 +139,67 @@ footer {
             <span>Zinc Aluminium Roofing Sheet</span> <!-- Text under the image -->
         </label>
 </section>
+<section>
+<div class="container">
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Raw materials</th>
+                <th>Quantity</th>
+                <th>Cost per One ($)</th>
+                <th>Cost ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Small</td>
+                <td><span class="editable" id="quantitySmall" onclick="calculateCost('Small')">0</span></td>
+                <td>50</td>
+                <td><span id="costSmall">0</span></td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td><span class="editable" id="quantityMedium" onclick="calculateCost('Medium')">0</span></td>
+                <td>100</td>
+                <td><span id="costMedium">0</span></td>
+            </tr>
+            <tr>
+            <td>Large</td>
+                <td><span class="editable" id="quantityLarge" onclick="calculateCost('Large')">0</span></td>
+                <td>150</td>
+                <td><span id="costLarge">0</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Cost</td>
+                <td><span id="totalCost">0</span></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+    
+</section>
+<script>
+     function calculateCost(size) {
+        var quantity = 1; // Default quantity is 1
+        var costPerOne = parseInt(document.querySelector('td:nth-child(3):contains("' + size + '") + td').innerText);
+        var cost = quantity * costPerOne;
+        document.getElementById('cost' + size).innerText = cost;
+        calculateTotalCost();
+    }
 
+    function calculateTotalCost() {
+        var totalCost = 0;
+        var costElements = document.querySelectorAll('span[id^="cost"]');
+        costElements.forEach(function(costElement) {
+            totalCost += parseInt(costElement.innerText);
+        });
+        document.getElementById('totalCost').innerText = totalCost;
+    }
+
+</script>
 <footer>
     <jsp:include page="footer.jsp" />
 </footer>

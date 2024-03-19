@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -72,7 +73,8 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 100px; /* Adjust as needed */
+    padding-top: 10px; /* Adjust as needed */
+    padding-bottom: 40px;
 }
 
 table {
@@ -103,6 +105,57 @@ tr:nth-child(even) {
     text-align: center;
     border: none;
     background: transparent;
+}
+.contain {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label1 {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    width: calc(100% - 100px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black; /* Change background color to black */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    display: none;
 }
 
 footer {
@@ -138,6 +191,21 @@ footer {
             <img src="img/zincroofing.jpg" alt="Option 3">
             <span>Zinc Aluminium Roofing Sheet</span> <!-- Text under the image -->
         </label>
+</section>
+<section>
+<div class="contain">
+    
+    <div>
+        <label1 for="length">Length:</label1>
+        <input type="number" id="length" placeholder="Enter length">
+    </div>
+    <div>
+        <label1 for="width">Width:</label1>
+        <input type="number" id="width" placeholder="Enter width">
+    </div>
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+</div>
 </section>
 <section>
 <div class="container">
@@ -198,6 +266,7 @@ footer {
         });
         document.getElementById('totalCost').innerText = totalCost;
     }
+    
 
 </script>
 <footer>

@@ -1,0 +1,23 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 19, 2024, 9:11:16 PM
+    Author     : Roshel Mahima
+*/
+
+*{
+    font-family: poppins;
+}
+
+body{
+    background: url("../img/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: #ffcc33;
+}

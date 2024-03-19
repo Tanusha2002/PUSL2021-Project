@@ -44,10 +44,13 @@
             background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
             z-index: 100;
         }
-        .nav-logo p{
-            color: white;
-            font-size: 25px;
-            font-weight: 600;
+        .nav-logo img{
+            width: 200px; 
+            height: auto;
+            position: absolute; 
+            top: 50%; 
+            right: 75%; 
+            transform: translate(-50%, -50%);
         }
         .nav-menu ul{
             display: flex;
@@ -257,7 +260,7 @@
         <div class="wrapper"> 
         <nav class="nav">
             <div class="nav-logo">
-                <p>BUILDAPPROX  .</p>
+                <img src="img/Logo.png">
             </div>
             <div class="nav-menu" id="navMenu">
                 <ul>

@@ -96,7 +96,7 @@
             align-items: center;
             justify-content: center;
             width: 512px;
-            height: 420px;
+            height: 520px;
             overflow: hidden;
             z-index: 2;
         }
@@ -116,10 +116,11 @@
             flex-direction: column;
             transition: .5s ease-in-out;
         }
+        
         .top span{
             color: #fff;
             font-size: small;
-            padding: 10px 0;
+            padding: -10px 0;
             display: flex;
             justify-content: center;
         }
@@ -323,6 +324,10 @@
                             <input type="text" class="input-field" placeholder="Lastname">
                             <i class="bx bx-user"></i>
                         </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Username">
+                        <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">
                         <input type="text" class="input-field" placeholder="Email">

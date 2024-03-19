@@ -7,8 +7,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Roshel Mahima
 */
 
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -16,8 +19,4 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-h1{
-    color: #ffcc33;
 }

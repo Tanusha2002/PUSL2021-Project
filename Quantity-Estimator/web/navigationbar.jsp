@@ -37,10 +37,13 @@ body {
     z-index: 100;
 }
 
-.nav-logo p {
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
+.nav-logo img{
+    width: 200px; 
+    height: auto;
+    position: absolute; 
+    top: 50%; 
+    right: 75%; 
+    transform: translate(-50%, -50%);
 }
 
 .nav-menu ul {
@@ -70,7 +73,7 @@ body {
 <div class="wrapper"> 
     <nav class="nav">
         <div class="nav-logo">
-            <p>BUILDAPPROX  .</p>
+            <img src="img/Logo.png">
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
@@ -78,7 +81,7 @@ body {
                 <li><a href="#" class="link">Blog</a></li>
                 <li><a href="review.jsp" class="link">Review</a></li>
                 <li><a href="#" class="link">Services</a></li>
-                <li><a href="#" class="link">About</a></li>
+                <li><a href="about.jsp" class="link">About</a></li>
             </ul>
         </div>
     </nav>

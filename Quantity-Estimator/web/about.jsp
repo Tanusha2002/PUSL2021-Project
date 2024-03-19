@@ -45,11 +45,6 @@
     font-weight: 500;
     letter-spacing: 1.2px;
     word-spacing: 5px;
-    /* Remove the following properties */
-    /* border: 1px solid rgba(255, 255, 255, 0); */
-    /* border-radius: 15px; */
-    /* backdrop-filter: blur(15px); */
-    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
     word-wrap: break-word;
 }
 
@@ -264,5 +259,6 @@
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

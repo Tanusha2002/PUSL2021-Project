@@ -266,9 +266,9 @@
                 <ul>
                     <li><a href="#" class="link active">Home</a></li>
                     <li><a href="#" class="link">Blog</a></li>
-                    <li><a href="reviewpg.jsp" class="link">Review</a></li>
+                    <li><a href="review.jsp" class="link">Review</a></li>
                     <li><a href="#" class="link">Services</a></li>
-                    <li><a href="aboutpg.jsp" class="link">About</a></li>
+                    <li><a href="about.jsp" class="link">About</a></li>
                 </ul>
             </div>
             <div class="nav-button">

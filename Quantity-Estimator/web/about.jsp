@@ -163,13 +163,13 @@
                         </div>
                         <ul class="sci">
                             <li style="--i: 1">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/tanusha_manamperi/"><i class="fa-brands fa-instagram"></i></a>
                             </li>
                             <li style="--i: 2">
-                                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                                <a href="https://github.com/Tanusha2002"><i class="fa-brands fa-github"></i></i></a>
                             </li>
                             <li style="--i: 3">
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                                <a href="https://www.linkedin.com/in/tanusha-manamperi-7894bb259/"><i class="fa-brands fa-linkedin-in"></i></i></a>
                             </li>
                         </ul>
                     </div>
@@ -185,10 +185,10 @@
                         </div>
                         <ul class="sci">
                             <li style="--i: 1">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/_vinomiii_/"><i class="fa-brands fa-instagram"></i></a>
                             </li>
                             <li style="--i: 2">
-                                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                                <a href="https://github.com/manuvinomi"><i class="fa-brands fa-github"></i></i></a>
                             </li>
                             <li style="--i: 3">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
@@ -207,10 +207,10 @@
                         </div>
                         <ul class="sci">
                             <li style="--i: 1">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/rochelle_mahiii/"><i class="fa-brands fa-instagram"></i></a>
                             </li>
                             <li style="--i: 2">
-                                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                                <a href="https://github.com/Rochellemahi"><i class="fa-brands fa-github"></i></i></a>
                             </li>
                             <li style="--i: 3">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
@@ -229,10 +229,10 @@
                         </div>
                         <ul class="sci">
                             <li style="--i: 1">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/adhiiiii_01/"><i class="fa-brands fa-instagram"></i></a>
                             </li>
                             <li style="--i: 2">
-                                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                                <a href="https://github.com/AdithyaJA"><i class="fa-brands fa-github"></i></i></a>
                             </li>
                             <li style="--i: 3">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
@@ -251,10 +251,10 @@
                         </div>
                         <ul class="sci">
                             <li style="--i: 1">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/sakuni.fonseka/"><i class="fa-brands fa-instagram"></i></a>
                             </li>
                             <li style="--i: 2">
-                                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                                <a href="https://github.com/sakunifonseka29"><i class="fa-brands fa-github"></i></i></a>
                             </li>
                             <li style="--i: 3">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>

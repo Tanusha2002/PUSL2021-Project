@@ -191,6 +191,12 @@ footer {
             <img src="img/zincroofing.jpg" alt="Option 3">
             <span>Zinc Aluminium Roofing Sheet</span> <!-- Text under the image -->
         </label>
+        
+         <input type="radio" id="option4" name="options" value="option4">
+        <label for="option4">
+            <img src="img/slab.jpg" alt="Option 4">
+            <span>Concrete slab</span> <!-- Text under the image -->
+        </label>
 </section>
 <section>
 <div class="contain">

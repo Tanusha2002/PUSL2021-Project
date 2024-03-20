@@ -26,8 +26,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     margin: 0 16px;
 }
 
-
-
 .row {
     display: flex;
     width: 100%;
@@ -51,4 +49,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color: white;
     background-color: #222222;
     border-left: 12px solid #000000;
+}
+
+.cell input[type="number"] {
+    border : none;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: transparent;
+    text-align: left;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
+                                                                                          
+.cell input[type="number"]:focus {
+    border-color: #007bff;
 }

@@ -28,17 +28,23 @@
                     <div class="row">
                         <div class="cell">Asbestos Sheet</div>
                         <div class="cell">3.5ft x 6ft</div>
-                        <div class="cell">&#x20A8; 3900</div>
+                        <div class="cell">
+                            &#x20A8;<input type="number" id="" value="3900" placeholder="Enter new price">
+                        </div>
                     </div>
                     <div class="row">
                         <div class="cell">Asbestos Sheet</div>
                         <div class="cell">3.5ft x 9ft</div>
-                        <div class="cell">&#x20A8; 4750</div>
+                        <div class="cell">
+                            &#x20A8;<input type="number" id="" value="4750" placeholder="Enter new price">
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row ">
                         <div class="cell">Asbestos Sheet</div>
                         <div class="cell">3.5ft x 12ft</div>
-                        <div class="cell">&#x20A8; 5600</div>
+                        <div class="cell">
+                            &#x20A8;<input type="number" id="" value="6500" placeholder="Enter new price">
+                        </div>
                     </div>
                     <!-- Add more rows as needed -->
                 </div>

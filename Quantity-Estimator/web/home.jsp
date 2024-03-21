@@ -9,12 +9,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<title>Home Page</title>
 <style>
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -104,7 +105,6 @@ body{
     font-style: italic; /* Make the font style italic */
 }
 
-
 .topic {
     display: flex;
     justify-content: center;
@@ -112,16 +112,20 @@ body{
     min-height: 10vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
 }
+.top {
+    position: relative;
+    margin-top: -800px; /* Adjust this value as needed */
+}
 
 .top header {
     font-size: 40px; /* Change this value to your desired font size */
     color: white; /* Change color to white */
-    text-align: center; /* Align text to the center */
+    text-align: center;/* Align text to the center */
 }
 .about{
                 width: 100%;
                 padding: 78px 0px;
-                background-color: gainsboro;
+                background-color: #ffb50b;
             }
             .about img{
                 height: auto;
@@ -139,7 +143,7 @@ body{
                 justify-content: space-around;
             }
             .about-text h1{
-                color: #427700;
+                color: #111;
                 font-size: 50px;
                 text-transform: capitalize;
                 margin-bottom: 20px;
@@ -152,7 +156,7 @@ body{
                 letter-spacing: 2px;
             }
             span{
-                color: yellowgreen;
+                color: gray;
             }
             .about-text p{
                 color: black;
@@ -162,7 +166,7 @@ body{
                 margin-bottom: 45px;
             }
             button{
-                background: yellowgreen;
+                background: #ff9900;
                 color: white;
                 text-decoration: none;
                 border: 2px solid transparent;
@@ -173,16 +177,16 @@ body{
             }
             button:hover{
                 background: transparent;
-                border: 2px solid #f9004d;
+                border: 2px solid #ffcc00;
             }
         
 </style>
 </head>
 <body>
-    <jsp:include page="navigationbar.jsp" />
+   <jsp:include page="navigationbar.jsp" />
     <div class="topic">
     <div class="top">
-        <header style="font-size: 40px;">THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</header>
+        <header style="font-size: 60px;"><b>THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</b></header>
     </div>
 </div>
 <section id="categories">
@@ -202,6 +206,7 @@ body{
         </div>
     </div>
 </section>
+    
  <section class="about" id="about">
             <div class="main">
                 <img src="img/Logo.png">
@@ -222,6 +227,9 @@ body{
             </div>
                     
         </section>
+    
+    
+    
 <script>
          
      

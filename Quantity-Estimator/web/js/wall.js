@@ -5,8 +5,8 @@
 
 function calculateWall(){
     // Get length and width values   
-    var height = document.getElementById('height').value;
-    var length = document.getElementById('length').value;
+    var height = document.getElementById('height').value * 12;//converting feet into inches
+    var length = document.getElementById('length').value * 12;//converting feet into inches
     
     // Get the selected radio button value
     var selectedOption = document.querySelector('input[name="options"]:checked').value;

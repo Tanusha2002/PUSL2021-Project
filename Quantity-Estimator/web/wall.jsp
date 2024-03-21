@@ -9,7 +9,10 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<script src="js/wall/cement.js" type="text/javascript"></script>
+<script src="js/wall/clay.js" type="text/javascript"></script>
+<script src="js/wall.js" type="text/javascript"></script>
+<title>Wall</title>
 <style>
 * {
     margin: 0;
@@ -169,7 +172,7 @@ footer {
 
 <section class="radio-container">
     <div>
-        <input type="radio" id="option1" name="options" value="option1">
+        <input type="radio" id="option1" name="options" value="clay" checked="true">
         <label for="option1">
             <img src="img/claybrick1.jpeg" alt="Option 1">
             <span>Clay Bricks</span> <!-- Text under the image -->
@@ -177,7 +180,7 @@ footer {
     </div>
 
     
-        <input type="radio" id="option2" name="options" value="option2">
+        <input type="radio" id="option2" name="options" value="cement">
         <label for="option2">
             <img src="img/cementbrick.jpeg" alt="Option 2">
             <span>Cement Bricks</span> <!-- Text under the image -->
@@ -186,16 +189,16 @@ footer {
 </section>
 <section>
 <div class="contain">
-    
+    <div>
+        <label1 for="width">Height:</label1>
+        <input type="number" id="height" placeholder="Enter height">
+    </div>    
     <div>
         <label1 for="length">Length:</label1>
         <input type="number" id="length" placeholder="Enter length">
     </div>
-    <div>
-        <label1 for="width">Width:</label1>
-        <input type="number" id="width" placeholder="Enter width">
-    </div>
-    <button onclick="calculate()">Calculate</button>
+
+    <button onclick="calculateWall()">Calculate</button>
     <div id="result"></div>
 </div>
 </section>

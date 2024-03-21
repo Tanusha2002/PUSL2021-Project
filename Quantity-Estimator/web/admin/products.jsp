@@ -15,34 +15,34 @@
     </head>
     <body>
         <main>
-            <section class="product">
-                <h2 class="product_title">Roof</h2>
+            <section class="table">
+                <h2 class="table_title">Roof</h2>
                 <div class="flex_table">
                     <!-- Table header -->
-                    <div class="row header">
-                        <div class="cell">Type</div>
-                        <div class="cell">Size</div>
-                        <div class="cell">Cost</div>
+                    <div class="table-row table-header">
+                        <div class="table-cell">Type</div>
+                        <div class="table-cell">Size</div>
+                        <div class="table-cell">Cost</div>
                     </div>
                     <!-- Table data -->
-                    <div class="row">
-                        <div class="cell">Asbestos Sheet</div>
-                        <div class="cell">3.5ft x 6ft</div>
-                        <div class="cell">
+                    <div class="table-row">
+                        <div class="table-cell">Asbestos Sheet</div>
+                        <div class="table-cell">3.5ft x 6ft</div>
+                        <div class="table-cell">
                             &#x20A8;<input type="number" id="" value="3900" placeholder="Enter new price">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="cell">Asbestos Sheet</div>
-                        <div class="cell">3.5ft x 9ft</div>
-                        <div class="cell">
+                    <div class="table-row">
+                        <div class="table-cell">Asbestos Sheet</div>
+                        <div class="table-cell">3.5ft x 9ft</div>
+                        <div class="table-cell">
                             &#x20A8;<input type="number" id="" value="4750" placeholder="Enter new price">
                         </div>
                     </div>
-                    <div class="row ">
-                        <div class="cell">Asbestos Sheet</div>
-                        <div class="cell">3.5ft x 12ft</div>
-                        <div class="cell">
+                    <div class="table-row">
+                        <div class="table-cell">Asbestos Sheet</div>
+                        <div class="table-cell">3.5ft x 12ft</div>
+                        <div class="table-cell">
                             &#x20A8;<input type="number" id="" value="6500" placeholder="Enter new price">
                         </div>
                     </div>

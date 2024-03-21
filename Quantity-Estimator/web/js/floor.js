@@ -33,16 +33,15 @@ function calculateFloor(){
         console.log("Concrete - Sand:", concrete[1]);
         console.log("Plaster - cement:", plaster[0]);
         console.log("Plaster - Sand:", plaster[1]);      
-    }else if (selectedOption == 'carpert'){
-        var lengthOfCarpert = calculateCarpert(width, length);
-        findDimensionsForEqualWastage();
+    }else if (selectedOption == 'carpet'){
+        var lengthOfCarpet = calculateCarpet(width, length);
         
         console.log("Floor Width:", width);
         console.log("Floor Length:", length);
         console.log("Selected Option:", selectedOption);
         
-        console.log("Length of the Carpert:", lengthOfCarpert[0]);
-        console.log("Roll On the Length:", lengthOfCarpert[1]);
+        console.log("Length of the Carpet:", lengthOfCarpet[0]);
+        console.log("Unroll the Carpert parrallel to", lengthOfCarpet[1]);
     }else{
         //invalid option
     }

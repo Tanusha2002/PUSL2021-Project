@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src="js/floor/tile.js" type="text/javascript"></script>
-<script src="js/floor/carpert.js" type="text/javascript"></script>
+<script src="js/floor/carpet.js" type="text/javascript"></script>
 <script src="js/floor.js" type="text/javascript"></script>
 <title>JSP Page</title>
 <style>
@@ -178,7 +178,7 @@ footer {
             <span>Tile</span> <!-- Text under the image -->
         </label>
     </div>
-        <input type="radio" id="option2" name="options" value="carpert">
+        <input type="radio" id="option2" name="options" value="carpet">
         <label for="option2">
             <img src="img/carpet.jpg" alt="Option 2">
             <span>Carpet</span> <!-- Text under the image -->

@@ -69,8 +69,6 @@
 <div class="container">
     <h1>Leave Your Feedback</h1>
     <form id="feedbackForm" action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required><br>
-        <input type="email" name="email" placeholder="Your Email" required><br>
         <textarea name="feedback" rows="5" placeholder="Your Feedback" required></textarea><br>
         <button type="submit">Submit Feedback</button>
     </form>

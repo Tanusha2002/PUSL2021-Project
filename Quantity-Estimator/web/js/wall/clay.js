@@ -8,8 +8,8 @@ const claybLength = 8;
 const claycementLayer = 0.5;
 
 function calculateClayBricks(wHeight, wLength) {
-    var numBricksHeight = Math.ceil((wHeight-cementLayer)/ (bHeight+cementLayer));
-    var numBricksLength = Math.ceil((wLength-cementLayer)/ (bLength+cementLayer));
+    var numBricksHeight = Math.ceil((wHeight-claycementLayer)/ (claybHeight+claycementLayer));
+    var numBricksLength = Math.ceil((wLength-claycementLayer)/ (claybLength+claycementLayer));
     var totalBricks = numBricksLength * numBricksHeight;
     
     return totalBricks;

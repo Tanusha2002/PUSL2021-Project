@@ -22,13 +22,13 @@ public class UserDao {
         boolean set=false;
         
         try{
-            String query = "insert into user(firstname, lastname, username, email, password)values(?,?,?,?,?)";
+            String query = "INSERT INTO user (username, email, firstname, lastname, password) VALUES (?, ?, ?, ?, ?)";
             
             PreparedStatement pt = this.con.prepareStatement(query);
-            pt.setString(1, user.getFname());
-            pt.setString(2, user.getLname());
-            pt.setString(3, user.getUsername());
-            pt.setString(4, user.getEmail());
+            pt.setString(1, user.getUsername());
+            pt.setString(2, user.getEmail());
+            pt.setString(3, user.getFname());
+            pt.setString(4, user.getLname());
             pt.setString(5, user.getPassword());
             
             pt.executeUpdate();
@@ -39,5 +39,29 @@ public class UserDao {
         } 
         return set;
     }
+    
+    public User logUser(String email, String pswd){
+        User user= null;
+        try{
+            String query = "select * from user where email=? and password=?";
+            PreparedStatement pst = this.con.prepareStatement(query);
+            pst.setString(1, email);
+            pst.setString(2, pswd);
+            
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()){
+                user = new User();
+                user.setId(rs.getInt("id"));
+                user.setFname(rs.getString("firstname"));
+                user.setEmail(rs.getString("email"));
+                user.setPassword(rs.getString("password"));
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return user;
+    }
+    
     
 }

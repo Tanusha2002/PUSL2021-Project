@@ -120,62 +120,72 @@ body{
     text-align: center; /* Align text to the center */
 }
 .about{
-                width: 100%;
-                padding: 78px 0px;
-                background-color: gainsboro;
-            }
-            .about img{
-                height: auto;
-                width: 420px;
-            }
-            .about-text{
-                width: 550px;
-            }
-            .main{
-                width: 1130px;
-                max-width: 95%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
-            .about-text h1{
-                color: #427700;
-                font-size: 50px;
-                text-transform: capitalize;
-                margin-bottom: 20px;
-            }
-            .about-text h5{
-                color: white;
-                font-size: 20px;
-                text-transform: capitalize;
-                margin-bottom: 25px;
-                letter-spacing: 2px;
-            }
-            span{
-                color: yellowgreen;
-            }
-            .about-text p{
-                color: black;
-                letter-spacing: 1px;
-                line-height: 28px;
-                font-size: 12px;
-                margin-bottom: 45px;
-            }
-            button{
-                background: yellowgreen;
-                color: white;
-                text-decoration: none;
-                border: 2px solid transparent;
-                font-weight: bold;
-                padding: 13px 30px;
-                border-radius: 30px;
-                transition: .4s;
-            }
-            button:hover{
-                background: transparent;
-                border: 2px solid #f9004d;
-            }
+    width: 100%;
+    padding: 78px 0px;
+    background-color: rgba(128, 128, 128, 0.5); /* Adjust transparency here */
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: #000;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span{
+    color: white;
+}
+
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 12px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+}
+        
         
 </style>
 </head>

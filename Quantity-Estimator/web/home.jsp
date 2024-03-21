@@ -109,8 +109,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10vh; /* Adjust this value to your preference */
+    min-height: 100vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
+    margin-top: 120px;
 }
 
 .top header {

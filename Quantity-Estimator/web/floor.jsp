@@ -9,8 +9,9 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<script src="js/floor/tile.js" type="text/javascript"></script>
 <script src="js/floor.js" type="text/javascript"></script>
+<title>JSP Page</title>
 <style>
 * {
     margin: 0;
@@ -170,7 +171,7 @@ footer {
 
 <section class="radio-container">
     <div>
-        <input type="radio" id="option1" name="options" value="option1" checked="true">
+        <input type="radio" id="option1" name="options" value="tile" checked="true">
         <label for="option1">
             <img src="img/tile.webp" alt="Option 1">
             <span>Tile</span> <!-- Text under the image -->

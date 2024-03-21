@@ -284,17 +284,19 @@
                     <div class="top">
                         <header>Login</header>
                     </div>
+                    <form action="LoginServlet" method="post">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username or Email">
+                        <input type="text" class="input-field" placeholder="Username or Email" name="email">
                         <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password">
+                        <input type="password" class="input-field" placeholder="Password" name="password">
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     <div class="input-box">
                         <input type="submit" class="submit" value="Sign In"> 
                     </div>
+                    </form>
                     <div class="two-col">
                         <div class="one">
                             <input type="checkbox" id="login-check">
@@ -315,7 +317,7 @@
                     <div class="top">
                         <header>Sign Up</header>
                     </div>
-                    <form action="" method="post">
+                    <form action="SignupServlet" method="post">
                         <div class="two-forms">
                             <div class="input-box">
                                 <input type="text" class="input-field" placeholder="Firstname" name="fname" required>

@@ -28,3 +28,32 @@ function calculateTile(fwidth, flength, tsvarient = '1x1'){
     return totalTiles;
 }
 
+function calculateConcrete(fwidth, flength){
+    const farea = calculateArea(fwidth, flength);
+    
+    // Assuming 200ft² floor needs 300kg of cement and 1/2 cubic foot of sand
+    const cementPerSqFt = 300 / 200; // kg
+    const sandPerSqFt = 0.5 / 200; // cubic feet
+    
+    const cementNeeded = farea * cementPerSqFt; // kg
+    const sandNeeded = farea * sandPerSqFt; // cubic feet
+    
+    return [cementNeeded, sandNeeded]
+}
+
+function calculatePlastering(fwidth, flength){
+    const farea = calculateArea(fwidth, flength);
+    
+    // Assuming 200ft² floor needs 100kg of cement and 1/4 cubic foot of sand
+    const cementPerSqFt = 100 / 200; // kg
+    const sandPerSqFt = 0.25 / 200; // cubic feet
+    
+    const cementNeeded = farea * cementPerSqFt; // kg
+    const sandNeeded = farea * sandPerSqFt; // cubic feet
+    
+    return [cementNeeded, sandNeeded];
+}
+
+function calculateArea(width, length){
+    return width * length;
+}

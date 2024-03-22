@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -30,7 +31,7 @@ body {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-between; /* Adjusted alignment to space between */
+    justify-content: center; /* Align links to the center */
     width: 100%;
     height: 100px;
     line-height: 100px;
@@ -43,12 +44,13 @@ body {
     height: auto;
     position: absolute; 
     top: 50%; 
-    left: 50%; /* Adjusted position to left */
+    left: 10%; /* Adjusted position to left */
     transform: translate(-50%, -50%);
 }
 
 .nav-menu ul {
     display: flex;
+    align-items: center; /* Center items vertically */
 }
 
 .nav-menu ul li {
@@ -73,6 +75,7 @@ body {
 .logout {
     margin-right: 25px; /* Adjust margin to space the logout button from other links */
 }
+
 
 .logout a {
     color: #000; /* Text color of logout button */
@@ -99,13 +102,16 @@ body {
                 <li><a href="home.jsp#about" class="link">About</a></li>
                 <li><a href="about.jsp" class="link">Our Team</a></li>
                 <!-- Added logout button -->
+               
                 <li class="logout"><a href="logout.jsp">Logout</a></li>
+                
             </ul>
         </div>
     </nav>
 </div>
 </body>
 </html>
+
 
 
 

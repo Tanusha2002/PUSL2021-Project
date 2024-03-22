@@ -93,11 +93,11 @@ body {
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="home.jsp" class="link active">Home</a></li>
+                <li><a href="#categories" class="link">Categories</a></li>
                 <li><a href="review.jsp" class="link">Review</a></li>
-                <li><a href="#" class="link">Services</a></li>
-                <li><a href="about.jsp" class="link">About</a></li>
+                <li><a href="home.jsp#about" class="link">About</a></li>
+                <li><a href="about.jsp" class="link">Our Team</a></li>
                 <!-- Added logout button -->
                 <li class="logout"><a href="logout.jsp">Logout</a></li>
             </ul>

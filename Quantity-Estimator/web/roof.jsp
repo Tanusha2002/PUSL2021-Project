@@ -11,6 +11,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>JSP Page</title>
+<script src="js/roof/claytile.js" type="text/javascript"></script>
+<script src="js/roof.js" type="text/javascript"></script>
 <style>
 * {
     margin: 0;
@@ -170,7 +172,7 @@ footer {
 
 <section class="radio-container">
     <div>
-        <input type="radio" id="option1" name="options" value="option1">
+        <input type="radio" id="option1" name="options" value="claytile" checked="true">
         <label for="option1">
             <img src="img/claytime.jpeg" alt="Option 1">
             <span>Clay tile</span> <!-- Text under the image -->
@@ -192,7 +194,7 @@ footer {
             <span>Zinc Aluminium Roofing Sheet</span> <!-- Text under the image -->
         </label>
         
-         <input type="radio" id="option4" name="options" value="option4">
+         <input type="radio" id="option4" name="options" value="slab">
         <label for="option4">
             <img src="img/slab.jpg" alt="Option 4">
             <span>Concrete slab</span> <!-- Text under the image -->
@@ -209,7 +211,7 @@ footer {
         <label1 for="width">Width:</label1>
         <input type="number" id="width" placeholder="Enter width">
     </div>
-    <button onclick="calculate()">Calculate</button>
+    <button onclick="calculateRoof()">Calculate</button>
     <div id="result"></div>
 </div>
 </section>

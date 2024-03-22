@@ -1,7 +1,7 @@
 <%-- 
     Document   : products
     Created on : Mar 19, 2024, 9:06:24 PM
-    Author     : Manusika
+    Author     : Manushika
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

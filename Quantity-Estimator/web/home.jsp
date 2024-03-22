@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<title>Home</title>
 <style>
 *{
     margin: 0;
@@ -111,7 +111,10 @@ body{
     align-items: center;
     min-height: 100vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
-    margin-top: 120px;
+}
+  
+.top {
+    position: relative;
 }
 
 .top header {
@@ -122,9 +125,8 @@ body{
 .about{
     width: 100%;
     padding: 78px 0px;
-    background-color: rgba(128, 128, 128, 0.5); /* Adjust transparency here */
+    background-color: #ffb50b77;
 }
-
 .about img{
     height: auto;
     width: 420px;
@@ -132,8 +134,9 @@ body{
 
 .about-text{
     width: 550px;
+    margin-left: 10px
 }
-
+  
 .main{
     width: 1130px;
     max-width: 95%;
@@ -145,6 +148,14 @@ body{
 
 .about-text h1{
     color: #000;
+    justify-content: space-evenly;
+}
+.main img{
+    margin-right: 10px
+}
+
+.about-text h1{
+    color: #111;
     font-size: 50px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -159,11 +170,11 @@ body{
 }
 
 span{
-    color: white;
+    color: gray;
 }
-
 .about-text p{
-    color: white;
+    text-align: justify;
+    color: black;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 12px;
@@ -171,7 +182,7 @@ span{
 }
 
 button{
-    background: black;
+    background: #ff9900;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -183,15 +194,29 @@ button{
 
 button:hover{
     background: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid #ffcc00;
+}
+            
+@media (max-width: 900px) {
+    
+    .main{
+        flex-direction: column;
+    }
+    
+    .main img{
+        margin-bottom: 30px;
+    }
+    
 }
         
-        
+
 </style>
 </head>
 <body>
-    <jsp:include page="navigationbar.jsp" />
-    <div class="topic">
+
+<jsp:include page="navigationbar.jsp" />
+<div class="topic">
+
     <div class="top">
         <header style="font-size: 40px;">THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</header>
     </div>
@@ -202,20 +227,20 @@ button:hover{
         
         <div class="category-box">
             <a href="roof_page_url">
-            <img src="img/floor.jpeg" alt="Floor">
-            <span>Floor</span>
+            <a href='floor.jsp'><img src="img/floor.jpeg" alt="Floor">
+            <span>Floor</span></a>
         </a>
         </div>
         <div class="category-box">
             <a href="http://localhost:8080/Quantity-Estimator/roof.jsp">
-            <img src="img/roof.webp" alt="Roof">
-            <span>Roof</span>
+            <a href='roof.jsp'><img src="img/roof.webp" alt="Roof">
+            <span>Roof</span></a>
             </a>
         </div>
         <div class="category-box">
             <a href="roof_page_url">
-            <img src="img/wall.jpeg" alt="Wall">
-            <span>Wall</span>
+            <a href='wall.jsp'><img src="img/wall.jpeg" alt="Wall">
+            <span>Wall</span></a>
             </a>
         </div>
     </div>

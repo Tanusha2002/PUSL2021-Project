@@ -13,6 +13,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Admin | User</title>
+    <script src="../js/users.js" type="text/javascript"></script>
     <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -51,7 +52,13 @@
                     out.println("<div class='table-cell email-cell'>" + resultSet.getString("email") + "</div>");
                     out.println("<div class='table-cell name-cell'>" + resultSet.getString("firstname") + "</div>");
                     out.println("<div class='table-cell name-cell'>" + resultSet.getString("lastname") + "</div>");
-                    out.println("<div class='table-cell role-cell'>" + resultSet.getString("role") + "</div>");
+                    //out.println("<div class='table-cell role-cell'>" + resultSet.getString("role") + "</div>");
+                    out.println("<div class='table-cell role-cell'>");
+                    out.println("<select onchange='changeRole(this, " + resultSet.getInt("id") + ")'>");
+                    out.println("<option value='admin'" + (resultSet.getString("role").equals("admin") ? " selected" : "") + ">Admin</option>");
+                    out.println("<option value='user'" + (resultSet.getString("role").equals("user") ? " selected" : "") + ">User</option>");
+                    out.println("</select>");
+                    out.println("</div>");
                     out.println("</div>");
                 }
             } catch (SQLException e) {

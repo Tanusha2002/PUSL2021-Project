@@ -9,13 +9,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home Page</title>
+<title>JSP Page</title>
 <style>
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -105,25 +104,22 @@ body{
     font-style: italic; /* Make the font style italic */
 }
 
+
 .topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10vh; /* Adjust this value to your preference */
+    min-height: 100vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
-}
-.top {
-    position: relative;
-    margin-top: -800px; /* Adjust this value as needed */
+    margin-top: 120px;
 }
 
 .top header {
     font-size: 40px; /* Change this value to your desired font size */
     color: white; /* Change color to white */
-    text-align: center;/* Align text to the center */
+    text-align: center; /* Align text to the center */
 }
 .about{
-<<<<<<< HEAD
     width: 100%;
     padding: 78px 0px;
     background-color: rgba(128, 128, 128, 0.5); /* Adjust transparency here */
@@ -190,72 +186,14 @@ button:hover{
     border: 2px solid #f9004d;
 }
         
-=======
-                width: 100%;
-                padding: 78px 0px;
-                background-color: #ffb50b;
-            }
-            .about img{
-                height: auto;
-                width: 420px;
-            }
-            .about-text{
-                width: 550px;
-            }
-            .main{
-                width: 1130px;
-                max-width: 95%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
-            .about-text h1{
-                color: #111;
-                font-size: 50px;
-                text-transform: capitalize;
-                margin-bottom: 20px;
-            }
-            .about-text h5{
-                color: white;
-                font-size: 20px;
-                text-transform: capitalize;
-                margin-bottom: 25px;
-                letter-spacing: 2px;
-            }
-            span{
-                color: gray;
-            }
-            .about-text p{
-                color: black;
-                letter-spacing: 1px;
-                line-height: 28px;
-                font-size: 12px;
-                margin-bottom: 45px;
-            }
-            button{
-                background: #ff9900;
-                color: white;
-                text-decoration: none;
-                border: 2px solid transparent;
-                font-weight: bold;
-                padding: 13px 30px;
-                border-radius: 30px;
-                transition: .4s;
-            }
-            button:hover{
-                background: transparent;
-                border: 2px solid #ffcc00;
-            }
->>>>>>> 40966b8e47e85d8b3d23e54286e2124cd96193c4
         
 </style>
 </head>
 <body>
-   <jsp:include page="navigationbar.jsp" />
+    <jsp:include page="navigationbar.jsp" />
     <div class="topic">
     <div class="top">
-        <header style="font-size: 60px;"><b>THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</b></header>
+        <header style="font-size: 40px;">THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</header>
     </div>
 </div>
 <section id="categories">
@@ -275,7 +213,6 @@ button:hover{
         </div>
     </div>
 </section>
-    
  <section class="about" id="about">
             <div class="main">
                 <img src="img/Logo.png">
@@ -296,9 +233,6 @@ button:hover{
             </div>
                     
         </section>
-    
-    
-    
 <script>
          
      

@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home Page</title>
+<title>Home</title>
 <style>
 *{
     margin: 0;
@@ -179,7 +179,7 @@ body{
                 background: transparent;
                 border: 2px solid #ffcc00;
             }
-        
+            
 </style>
 </head>
 <body>

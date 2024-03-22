@@ -12,7 +12,7 @@
 <script src="js/floor/tile.js" type="text/javascript"></script>
 <script src="js/floor/carpet.js" type="text/javascript"></script>
 <script src="js/floor.js" type="text/javascript"></script>
-<title>JSP Page</title>
+<title>Floor</title>
 <style>
 * {
     margin: 0;

@@ -15,7 +15,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -105,6 +104,7 @@ body{
     font-style: italic; /* Make the font style italic */
 }
 
+
 .topic {
     display: flex;
     justify-content: center;
@@ -112,15 +112,15 @@ body{
     min-height: 100vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
 }
+  
 .top {
     position: relative;
-   
 }
 
 .top header {
     font-size: 40px; /* Change this value to your desired font size */
     color: white; /* Change color to white */
-    text-align: center;/* Align text to the center */
+    text-align: center; /* Align text to the center */
 }
 .about{
     width: 100%;
@@ -131,16 +131,23 @@ body{
     height: auto;
     width: 420px;
 }
+
 .about-text{
     width: 550px;
     margin-left: 10px
 }
+  
 .main{
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: #000;
     justify-content: space-evenly;
 }
 .main img{
@@ -153,6 +160,7 @@ body{
     text-transform: capitalize;
     margin-bottom: 20px;
 }
+
 .about-text h5{
     color: white;
     font-size: 20px;
@@ -160,6 +168,7 @@ body{
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
+
 span{
     color: gray;
 }
@@ -171,6 +180,7 @@ span{
     font-size: 12px;
     margin-bottom: 45px;
 }
+
 button{
     background: #ff9900;
     color: white;
@@ -181,6 +191,7 @@ button{
     border-radius: 30px;
     transition: .4s;
 }
+
 button:hover{
     background: transparent;
     border: 2px solid #ffcc00;
@@ -202,10 +213,12 @@ button:hover{
 </style>
 </head>
 <body>
-   <jsp:include page="navigationbar.jsp" />
+
+<jsp:include page="navigationbar.jsp" />
 <div class="topic">
+
     <div class="top">
-        <header style="font-size: 60px;"><b>THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</b></header>
+        <header style="font-size: 40px;">THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</header>
     </div>
 </div>
 <section id="categories">
@@ -232,7 +245,6 @@ button:hover{
         </div>
     </div>
 </section>
-    
  <section class="about" id="about">
             <div class="main">
                 <img src="img/Logo.png">
@@ -253,9 +265,6 @@ button:hover{
             </div>
                     
         </section>
-    
-    
-    
 <script>
          
      

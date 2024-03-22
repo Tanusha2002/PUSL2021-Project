@@ -6,7 +6,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -17,6 +16,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: url("img/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .nav {
@@ -61,6 +67,7 @@
 </style>
 </head>
 <body>
+<div class="wrapper"> 
     <nav class="nav">
         <div class="nav-logo">
             <p>BUILDAPPROX  .</p>
@@ -75,8 +82,8 @@
             </ul>
         </div>
     </nav>
+</div>
 </body>
 </html>
-
 
 

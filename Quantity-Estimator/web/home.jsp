@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home Page</title>
+<title>Home</title>
 <style>
 *{
     margin: 0;
@@ -198,6 +198,7 @@ button:hover{
     
 }
         
+
 </style>
 </head>
 <body>
@@ -213,20 +214,20 @@ button:hover{
         
         <div class="category-box">
             <a href="roof_page_url">
-            <img src="img/floor.jpeg" alt="Floor">
-            <span>Floor</span>
+            <a href='floor.jsp'><img src="img/floor.jpeg" alt="Floor">
+            <span>Floor</span></a>
         </a>
         </div>
         <div class="category-box">
             <a href="http://localhost:8080/Quantity-Estimator/roof.jsp">
-            <img src="img/roof.webp" alt="Roof">
-            <span>Roof</span>
+            <a href='roof.jsp'><img src="img/roof.webp" alt="Roof">
+            <span>Roof</span></a>
             </a>
         </div>
         <div class="category-box">
             <a href="roof_page_url">
-            <img src="img/wall.jpeg" alt="Wall">
-            <span>Wall</span>
+            <a href='wall.jsp'><img src="img/wall.jpeg" alt="Wall">
+            <span>Wall</span></a>
             </a>
         </div>
     </div>

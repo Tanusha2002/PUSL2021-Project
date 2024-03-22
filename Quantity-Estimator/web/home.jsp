@@ -89,7 +89,7 @@ body{
     object-fit: cover;
 }
 
-.category-box a {
+.category-box span {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -199,17 +199,24 @@ button:hover{
 <section id="categories">
     <div class="wrapper">
         <h2 class="category-heading">Categories</h2>
+        
         <div class="category-box">
+            <a href="roof_page_url">
             <img src="img/floor.jpeg" alt="Floor">
-            <a href="#floor">Floor</a>
+            <span>Floor</span>
+        </a>
         </div>
         <div class="category-box">
+            <a href="http://localhost:8080/Quantity-Estimator/roof.jsp">
             <img src="img/roof.webp" alt="Roof">
-            <a href="#roof">Roof</a>
+            <span>Roof</span>
+            </a>
         </div>
         <div class="category-box">
+            <a href="roof_page_url">
             <img src="img/wall.jpeg" alt="Wall">
-            <a href="#wall">Wall</a>
+            <span>Wall</span>
+            </a>
         </div>
     </div>
 </section>

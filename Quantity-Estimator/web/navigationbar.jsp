@@ -6,12 +6,11 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JSP Page</title>
+<title>Navigation Bar</title>
 <style>
 * {
     margin: 0;
@@ -26,29 +25,30 @@ body {
     background-attachment: fixed;
 }
 
+.nav-logo{
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /*margin-left: 20px; /* Adjust margin as needed */
+    padding: 20px;
+}
+
 .nav {
-    position: fixed;
-    top: 0;
     display: flex;
-    justify-content: space-between; /* Adjusted alignment to space between */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 100px;
-    line-height: 100px;
+    height: 60px;
     background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
     z-index: 100;
 }
 
-.nav-logo img{
-    width: 200px; 
-    height: auto;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; /* Adjusted position to left */
-    transform: translate(-50%, -50%);
-}
-
 .nav-menu ul {
     display: flex;
+    align-items: center;
 }
 
 .nav-menu ul li {
@@ -60,7 +60,7 @@ body {
     font-weight: bold;
     color: #fff;
     padding-bottom: 15px;
-    margin: 0 25px;
+    margin: 0 15px; /* Adjust margin as needed */
     font-size: 18px;
 }
 
@@ -69,24 +69,23 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-/* Added styles for logout button */
 .logout {
-    margin-right: 25px; /* Adjust margin to space the logout button from other links */
+    margin-right: 20px;
 }
 
 .logout a {
-    color: #000; /* Text color of logout button */
-    background-color: #fff; /* Background color of logout button */
+    color: #000;
+    background-color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px; /* Add rounded corners to button */
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 </style>
 </head>
 <body>
-<div class="wrapper"> 
+    
     <nav class="nav">
         <div class="nav-logo">
             <img src="img/Logo.png">
@@ -98,14 +97,18 @@ body {
                 <li><a href="review.jsp" class="link">Review</a></li>
                 <li><a href="home.jsp#about" class="link">About</a></li>
                 <li><a href="about.jsp" class="link">Our Team</a></li>
-                <!-- Added logout button -->
-                <li class="logout"><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
+        <!-- Moved logout button outside of nav-menu -->
+        <div class="logout">
+            <a href="logout.jsp">Logout</a>
+        </div>
     </nav>
-</div>
+
+
 </body>
 </html>
+
 
 
 

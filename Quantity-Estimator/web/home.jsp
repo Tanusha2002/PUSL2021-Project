@@ -109,12 +109,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10vh; /* Adjust this value to your preference */
+    min-height: 100vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
 }
 .top {
     position: relative;
-    margin-top: -800px; /* Adjust this value as needed */
+   
 }
 
 .top header {
@@ -123,68 +123,87 @@ body{
     text-align: center;/* Align text to the center */
 }
 .about{
-                width: 100%;
-                padding: 78px 0px;
-                background-color: #ffb50b;
-            }
-            .about img{
-                height: auto;
-                width: 420px;
-            }
-            .about-text{
-                width: 550px;
-            }
-            .main{
-                width: 1130px;
-                max-width: 95%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
-            .about-text h1{
-                color: #111;
-                font-size: 50px;
-                text-transform: capitalize;
-                margin-bottom: 20px;
-            }
-            .about-text h5{
-                color: white;
-                font-size: 20px;
-                text-transform: capitalize;
-                margin-bottom: 25px;
-                letter-spacing: 2px;
-            }
-            span{
-                color: gray;
-            }
-            .about-text p{
-                color: black;
-                letter-spacing: 1px;
-                line-height: 28px;
-                font-size: 12px;
-                margin-bottom: 45px;
-            }
-            button{
-                background: #ff9900;
-                color: white;
-                text-decoration: none;
-                border: 2px solid transparent;
-                font-weight: bold;
-                padding: 13px 30px;
-                border-radius: 30px;
-                transition: .4s;
-            }
-            button:hover{
-                background: transparent;
-                border: 2px solid #ffcc00;
-            }
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #ffb50b77;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+    margin-left: 10px
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main img{
+    margin-right: 10px
+}
+
+.about-text h1{
+    color: #111;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+span{
+    color: gray;
+}
+.about-text p{
+    text-align: justify;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 12px;
+    margin-bottom: 45px;
+}
+button{
+    background: #ff9900;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #ffcc00;
+}
             
+@media (max-width: 900px) {
+    
+    .main{
+        flex-direction: column;
+    }
+    
+    .main img{
+        margin-bottom: 30px;
+    }
+    
+}
+        
+
 </style>
 </head>
 <body>
    <jsp:include page="navigationbar.jsp" />
-    <div class="topic">
+<div class="topic">
     <div class="top">
         <header style="font-size: 60px;"><b>THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</b></header>
     </div>

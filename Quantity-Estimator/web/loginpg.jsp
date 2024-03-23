@@ -284,7 +284,7 @@
                     </div>
                     <form action="LoginServlet" method="post">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username or Email" name="email">
+                        <input type="text" class="input-field" placeholder="Email" name="email">
                         <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">

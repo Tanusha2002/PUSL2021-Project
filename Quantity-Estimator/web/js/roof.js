@@ -9,38 +9,26 @@ function calculateRoof() {
     
     var selectedOption = document.querySelector('input[name="options"]:checked').value;
     
+    let est = [];
+    
     if(selectedOption == 'claytile'){
-       var noOfTiles = calculateClayTile(width, length);
-       
-        console.log("Roof Width:", width);
-        console.log("Roof Length:", length);
-        console.log("Selected Option:", selectedOption);
-        
-        console.log("No of Tiles:", noOfTiles);
+       var noOfTiles = calculateClayTile(width, length);    
+       fetchProductDetails(noOfTiles[0], noOfTiles[1], true);
     }else if (selectedOption == 'sheet'){
-        var Xcombo = calculateSheet(width, length);
+        var Xcombo = calculateSheet(width, length);              
+        fetchProductDetails(6, Xcombo[0], true);
+        fetchProductDetails(7, Xcombo[1]);
+        fetchProductDetails(8, Xcombo[2]);
+        fetchProductDetails(9, Xcombo[3]);
         
-        console.log("Roof Width:", width);
-        console.log("Roof Length:", length);
-        console.log("Selected Option:", selectedOption);
-        
-        console.log("Size Six:", Xcombo[0]);
-        console.log("Size Eight:", Xcombo[1]);
-        console.log("Size Ten:", Xcombo[2]);
-        console.log("Size Twelve:", Xcombo[3]);      
-    }else if (selectedOption == 'claytile'){
+    }else if (selectedOption == 'AlZn'){
         
     }else if(selectedOption == 'slab'){
-        var slab = calculateSlab(width, length);
-        
-        console.log("Roof Width:", width);
-        console.log("Roof Length:", length);
-        console.log("Selected Option:", selectedOption);
-        
-        console.log("Cement:", slab[0]);
-        console.log("Crushed Stones:", slab[1]);
-        console.log("Sand:", slab[2]);
+        var slab = calculateSlab(width, length);       
+        fetchProductDetails(11, slab[0], true);
+        fetchProductDetails(13, slab[1]);
+        fetchProductDetails(12, slab[2]);
     }else{
         //invalid option
-    }
+    }    
 }

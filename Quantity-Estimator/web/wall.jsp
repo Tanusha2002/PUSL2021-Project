@@ -12,6 +12,7 @@
 <script src="js/wall/cement.js" type="text/javascript"></script>
 <script src="js/wall/clay.js" type="text/javascript"></script>
 <script src="js/wall.js" type="text/javascript"></script>
+<link href="css/estimation.css" rel="stylesheet" type="text/css"/>
 <title>Wall</title>
 <style>
 * {
@@ -170,7 +171,7 @@ footer {
 
 <jsp:include page="navigationbar.jsp" />
 
-<section class="radio-container">
+<section class="radio-container estimation-input">
     <div>
         <input type="radio" id="option1" name="options" value="clay" checked="true">
         <label for="option1">
@@ -202,7 +203,19 @@ footer {
     <div id="result"></div>
 </div>
 </section>
-<section>
+<section class="estimation-input">
+    <div class="container">
+        <div class="item">
+            <label for="width">Width:</label>
+            <input type="text" id="width" placeholder="Enter width">
+        </div>
+        <div class="item">
+            <label for="height">Height:</label>
+            <input type="text" id="height" placeholder="Enter height">
+        </div>
+    </div>
+</section>
+<section class="estimation-input">
 <div class="container">
     
     <table>

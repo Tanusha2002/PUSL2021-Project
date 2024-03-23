@@ -15,10 +15,19 @@ function calculateWall(){
         var noOfBricks = calculateClayBricks(height, length);
         var cement = calculateClayCement(noOfBricks);
         var sand = calculateClaySand(noOfBricks); 
+        
+        fetchProductDetails(2, noOfBricks, true);
+        fetchProductDetails(11, cement);
+        fetchProductDetails(12, sand);   
+        
     } else if(selectedOption == 'cement'){
         noOfBricks = calculateCementBricks(height, length);
         cement = calculateCementCement(noOfBricks);
         sand = calculateCementSand(noOfBricks); 
+               
+        fetchProductDetails(1, noOfBricks, true);
+        fetchProductDetails(11, cement);
+        fetchProductDetails(12, sand);   
     }else{
         //invalid option
     }

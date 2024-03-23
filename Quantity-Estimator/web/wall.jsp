@@ -11,6 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src="js/wall/cement.js" type="text/javascript"></script>
 <script src="js/wall/clay.js" type="text/javascript"></script>
+<script src="js/estimationCat.js" type="text/javascript"></script>
 <script src="js/wall.js" type="text/javascript"></script>
 <title>Wall</title>
 <style>

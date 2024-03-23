@@ -10,7 +10,6 @@ function fetchProductDetails(ids, qty, bool = false) {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var products = JSON.parse(xhr.responseText);
             updateUI(products, qty, bool);
-            console.log(products.name);
         }
     };
     xhr.open("GET", "ProductServlet?ids=" + JSON.stringify(ids), true);

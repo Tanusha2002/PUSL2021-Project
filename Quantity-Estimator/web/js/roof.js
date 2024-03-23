@@ -10,12 +10,32 @@ function calculateRoof() {
     var selectedOption = document.querySelector('input[name="options"]:checked').value;
     
     if(selectedOption == 'claytile'){
-       var noOfTiles = calculateClayTil(width, length);
+       var noOfTiles = calculateClayTile(width, length);
        
         console.log("Roof Width:", width);
         console.log("Roof Length:", length);
         console.log("Selected Option:", selectedOption);
         
         console.log("No of Tiles:", noOfTiles);
+    }else if (selectedOption == 'claytile'){
+        
+        console.log("Roof Width:", width);
+        console.log("Roof Length:", length);
+        console.log("Selected Option:", selectedOption);
+        
+    }else if (selectedOption == 'claytile'){
+        
+    }else if(selectedOption == 'slab'){
+        var slab = calculateSlab(width, length);
+        
+        console.log("Roof Width:", width);
+        console.log("Roof Length:", length);
+        console.log("Selected Option:", selectedOption);
+        
+        console.log("Cement:", slab[0]);
+        console.log("Crushed Stones:", slab[1]);
+        console.log("Sand:", slab[2]);
+    }else{
+        //invalid option
     }
 }

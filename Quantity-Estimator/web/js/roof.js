@@ -17,12 +17,17 @@ function calculateRoof() {
         console.log("Selected Option:", selectedOption);
         
         console.log("No of Tiles:", noOfTiles);
-    }else if (selectedOption == 'claytile'){
+    }else if (selectedOption == 'sheet'){
+        var Xcombo = calculateSheet(width, length);
         
         console.log("Roof Width:", width);
         console.log("Roof Length:", length);
         console.log("Selected Option:", selectedOption);
         
+        console.log("Size Six:", Xcombo[0]);
+        console.log("Size Eight:", Xcombo[1]);
+        console.log("Size Ten:", Xcombo[2]);
+        console.log("Size Twelve:", Xcombo[3]);      
     }else if (selectedOption == 'claytile'){
         
     }else if(selectedOption == 'slab'){

@@ -75,14 +75,15 @@ response.sendRedirect("loginpg.jsp");
 <jsp:include page="navigationbar.jsp" />
 <div class="container">
     <h1>Leave Your Feedback</h1>
-    <form id="feedbackForm" action="#" method="post">
+    <form id="feedbackForm" action="changeReview.jsp" method="post">
+        <input type="hidden" name="id" value="<%= user.getId() %>">
         <h2 type="text" name="name" style="text-align: left; margin-bottom: 2px">
             <%= user.getFname() + " " + user.getLname() %>
         </h2>
         <h3 type="text" name="name" style="text-align: left; margin-bottom: 10px; color: gray">
             <%= "@" + user.getUsername() %>
         </h3>
-        <textarea name="feedback" rows="5" placeholder="Your Feedback" required></textarea><br>
+        <textarea name="review" rows="5" placeholder="Your Feedback" required><% if(user.getReview() != null) out.print(user.getReview()); %></textarea><br>
         <button type="submit">Submit Feedback</button>
     </form>
 </div>

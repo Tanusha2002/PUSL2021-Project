@@ -25,30 +25,30 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    min-height: 100vh; 
 }
 
-/* Styling for radio buttons */
+
 .radio-container {
-    position: relative; /* Set position to relative for the container */
+    position: relative; 
     display: flex;
     align-items: center;
-    justify-content: center; /* Center items horizontally */
-    margin-bottom: 20px; /* Increase margin-bottom for spacing between sections */
-    margin-top: 150px; /* Adjust margin-top to bring the options downwards */
+    justify-content: center; 
+    margin-bottom: 20px; 
+    margin-top: 150px;
 }
 
 .radio-container input[type="radio"] {
-    position: absolute; /* Set position to absolute */
-    opacity: 0; /* Hide the radio button */
+    position: absolute; 
+    opacity: 0; 
 }
 
 .radio-container label {
     cursor: pointer;
-    margin-right: 20px; /* Adjust margin-right for spacing between images */
-    display: flex; /* Add display flex to align items */
-    flex-direction: column; /* Set flex direction to column */
-    align-items: center; /* Align items in the center */
+    margin-right: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .radio-container img {
@@ -172,7 +172,7 @@ footer {
         <input type="radio" id="option1" name="options" value="option1">
         <label for="option1">
             <img src="img/tile.webp" alt="Option 1">
-            <span>Tile</span> <!-- Text under the image -->
+            <span>Tile</span> 
         </label>
     </div>
 
@@ -180,8 +180,35 @@ footer {
         <input type="radio" id="option2" name="options" value="option2">
         <label for="option2">
             <img src="img/carpet.jpg" alt="Option 2">
-            <span>Carpet</span> <!-- Text under the image -->
+            <span>Carpet</span> 
         </label>
+    
+</section>
+<section class="radio-container">
+    <
+    <div>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">
+            <img src="img/1x1tile.jpg" alt="Option 1">
+            <span>1x1 Tile</span> 
+        </label>
+    </div>
+
+    <div>
+        <input type="radio" id="option2" name="options" value="option2">
+        <label for="option2">
+            <img src="img/1x2tile.jpg" alt="Option 2">
+            <span>1x2 Tile</span> 
+        </label>
+    </div>
+        
+        <div>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">
+            <img src="img/2x2tile.jpg" alt="Option 1">
+            <span>2x2 Tile</span> 
+        </label>
+    </div>
     
 </section>
 <section>

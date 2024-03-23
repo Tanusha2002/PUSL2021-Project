@@ -4,6 +4,12 @@
     Author     : nalin
 --%>
 
+<%@page import="QE.model.User"%>
+<% User user =(User) session.getAttribute("loguser");
+if (user==null){
+response.sendRedirect("loginpg.jsp");
+    }
+    %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,30 +72,20 @@
 </style>
 </head>
 <body>
-
+<jsp:include page="navigationbar.jsp" />
 <div class="container">
     <h1>Leave Your Feedback</h1>
     <form id="feedbackForm" action="#" method="post">
-        <input type="text" name="username" value="DefaultUsername" readonly style="background-color: #eee; color: #333;"><br>
+        <h2 type="text" name="name" style="text-align: left; margin-bottom: 2px">
+            <%= user.getFname() + " " + user.getLname() %>
+        </h2>
+        <h3 type="text" name="name" style="text-align: left; margin-bottom: 10px; color: gray">
+            <%= "@" + user.getUsername() %>
+        </h3>
         <textarea name="feedback" rows="5" placeholder="Your Feedback" required></textarea><br>
         <button type="submit">Submit Feedback</button>
     </form>
 </div>
-<jsp:include page="navigationbar.jsp" />
-<script>
-const feedbackForm = document.getElementById('feedbackForm');
-
-// Submit feedback form
-feedbackForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(feedbackForm);
-    const username = formData.get('username');
-    const feedback = formData.get('feedback');
-    console.log(`Username: ${username}, Feedback: ${feedback}`);
-    // Here you can perform further actions, such as sending the feedback data to a server
-});
-</script>
-
 </body>
 </html>
 

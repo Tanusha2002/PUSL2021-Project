@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
  */
 
-function calculateClayTil(rWidth, rLength) {
+function calculateClayTile(rWidth, rLength) {
     const tWidth = 10/12;
     const tLength = 1 + 1/3;
     

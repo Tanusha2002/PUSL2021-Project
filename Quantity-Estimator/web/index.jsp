@@ -17,6 +17,6 @@
         <h1>Hello World!</h1>
         
         <% out.print(dbconnection.getConnection()); %>
-        
+        <a href="loginpg.jsp">goto</a>
     </body>
 </html>

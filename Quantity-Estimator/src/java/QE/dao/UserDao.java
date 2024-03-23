@@ -52,9 +52,13 @@ public class UserDao {
             if (rs.next()){
                 user = new User();
                 user.setId(rs.getInt("id"));
-                user.setFname(rs.getString("firstname"));
+                user.setUsername(rs.getString("username"));
                 user.setEmail(rs.getString("email"));
-                user.setPassword(rs.getString("password"));
+                user.setFname(rs.getString("firstname"));                
+                user.setLname(rs.getString("lastname"));
+                user.setRole(rs.getString("role"));
+                user.setReview(rs.getString("review")); 
+                user.setRating(rs.getInt("rating")); 
             }
         }
         catch(Exception e){

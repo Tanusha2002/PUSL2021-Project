@@ -11,5 +11,5 @@ function calculateClayTile(rWidth, rLength) {
     var numTilesLength = Math.ceil(rWidth / tLength);
     var totalTiles = numTilesWidth * numTilesLength;
     
-    return totalTiles;
+    return [10, totalTiles];
 }

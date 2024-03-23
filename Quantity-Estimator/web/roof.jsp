@@ -15,6 +15,7 @@
 <script src="js/roof/sheet.js" type="text/javascript"></script>
 <script src="js/roof/slab.js" type="text/javascript"></script>
 <script src="js/roof.js" type="text/javascript"></script>
+<script src="js/estimationCat.js" type="text/javascript"></script>
 <style>
 * {
     margin: 0;
@@ -218,9 +219,8 @@ footer {
 </div>
 </section>
 <section>
-<div class="container">
-    
-    <table>
+    <div class="container" id="output">
+    <table class="output">
         <thead>
             <tr>
                 <th>Raw materials</th>
@@ -232,21 +232,9 @@ footer {
         <tbody>
             <tr>
                 <td>Small</td>
-                <td><span class="editable" id="quantitySmall" onclick="calculateCost('Small')">0</span></td>
+                <td>5</td>
                 <td>50</td>
-                <td><span id="costSmall">0</span></td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td><span class="editable" id="quantityMedium" onclick="calculateCost('Medium')">0</span></td>
-                <td>100</td>
-                <td><span id="costMedium">0</span></td>
-            </tr>
-            <tr>
-            <td>Large</td>
-                <td><span class="editable" id="quantityLarge" onclick="calculateCost('Large')">0</span></td>
-                <td>150</td>
-                <td><span id="costLarge">0</span></td>
+                <td>250</td>
             </tr>
         </tbody>
         <tfoot>
@@ -257,6 +245,8 @@ footer {
         </tfoot>
     </table>
 </div>
+    
+    
     
 </section>
 <script>

@@ -6,9 +6,9 @@
 function calculateSlab(rWidth, rLength){
     var rArea = rWidth * rLength;
     
-    const cementNeeded = rArea * (700 / 200);//For 200^ft we need 14 bags of 50kg
-    const crushedStonesNeeded = rArea * (1 / 200);//For 200^ft we need 1 CS Cube ps:1 Cube is 100cft
-    const sandNeeded = rArea * (1 / 200);//For 200^ft we need 1 sand Cube ps:1 Cube is 100cft
+    const cementNeeded = Math.ceil(rArea * (14 / 200));//For 200^ft we need 14 bags of 50kg
+    const crushedStonesNeeded = rArea * (100 / 200);//For 200^ft we need 1 CS Cube ps:1 Cube is 100cft
+    const sandNeeded = rArea * (100 / 200);//For 200^ft we need 1 sand Cube ps:1 Cube is 100cft
     
     return [cementNeeded, crushedStonesNeeded, sandNeeded];
 }

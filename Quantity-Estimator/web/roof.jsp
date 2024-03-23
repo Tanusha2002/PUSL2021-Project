@@ -219,7 +219,7 @@ footer {
 </div>
 </section>
 <section>
-    <div class="container" id="output">
+<div class="container" id="output">
     <table class="output">
         <thead>
             <tr>
@@ -231,10 +231,7 @@ footer {
         </thead>
         <tbody>
             <tr>
-                <td>Small</td>
-                <td>5</td>
-                <td>50</td>
-                <td>250</td>
+                <td colspan="4">Not Calculated still</td>
             </tr>
         </tbody>
         <tfoot>
@@ -244,31 +241,8 @@ footer {
             </tr>
         </tfoot>
     </table>
-</div>
-    
-    
-    
+</div> 
 </section>
-<script>
-     function calculateCost(size) {
-        var quantity = 1; // Default quantity is 1
-        var costPerOne = parseInt(document.querySelector('td:nth-child(3):contains("' + size + '") + td').innerText);
-        var cost = quantity * costPerOne;
-        document.getElementById('cost' + size).innerText = cost;
-        calculateTotalCost();
-    }
-
-    function calculateTotalCost() {
-        var totalCost = 0;
-        var costElements = document.querySelectorAll('span[id^="cost"]');
-        costElements.forEach(function(costElement) {
-            totalCost += parseInt(costElement.innerText);
-        });
-        document.getElementById('totalCost').innerText = totalCost;
-    }
-    
-
-</script>
 <footer>
     <jsp:include page="footer.jsp" />
 </footer>

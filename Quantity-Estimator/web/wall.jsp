@@ -203,9 +203,8 @@ footer {
 </div>
 </section>
 <section>
-<div class="container">
-    
-    <table>
+<div class="container" id="output">
+    <table class="output">
         <thead>
             <tr>
                 <th>Raw materials</th>
@@ -216,18 +215,8 @@ footer {
         </thead>
         <tbody>
             <tr>
-                <td>Cement</td>
-                <td><span class="editable" id="quantitySmall" onclick="calculateCost('Small')">0</span></td>
-                <td>50</td>
-                <td><span id="costSmall">0</span></td>
+                <td colspan="4">Not Calculated still</td>
             </tr>
-            <tr>
-                <td>Sand</td>
-                <td><span class="editable" id="quantityMedium" onclick="calculateCost('Medium')">0</span></td>
-                <td>100</td>
-                <td><span id="costMedium">0</span></td>
-            </tr>
-            
         </tbody>
         <tfoot>
             <tr>
@@ -236,29 +225,8 @@ footer {
             </tr>
         </tfoot>
     </table>
-</div>
-    
+</div> 
 </section>
-<script>
-     function calculateCost(size) {
-        var quantity = 1; // Default quantity is 1
-        var costPerOne = parseInt(document.querySelector('td:nth-child(3):contains("' + size + '") + td').innerText);
-        var cost = quantity * costPerOne;
-        document.getElementById('cost' + size).innerText = cost;
-        calculateTotalCost();
-    }
-
-    function calculateTotalCost() {
-        var totalCost = 0;
-        var costElements = document.querySelectorAll('span[id^="cost"]');
-        costElements.forEach(function(costElement) {
-            totalCost += parseInt(costElement.innerText);
-        });
-        document.getElementById('totalCost').innerText = totalCost;
-    }
-    
-
-</script>
 <footer>
     <jsp:include page="footer.jsp" />
 </footer>

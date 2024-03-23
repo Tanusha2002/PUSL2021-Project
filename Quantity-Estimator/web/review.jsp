@@ -4,6 +4,12 @@
     Author     : nalin
 --%>
 
+<%@page import="QE.model.User"%>
+<% User user =(User) session.getAttribute("loguser");
+if (user==null){
+response.sendRedirect("loginpg.jsp");
+    }
+    %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +19,7 @@
 <title>Feedback Page</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
         background-image: url('img/home.jpg'); /* Add your image path here */
@@ -28,6 +34,7 @@
         background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Poppins', sans-serif;
     }
     h1 {
         text-align: center;
@@ -65,29 +72,21 @@
 </style>
 </head>
 <body>
-
+<jsp:include page="navigationbar.jsp" />
 <div class="container">
     <h1>Leave Your Feedback</h1>
-    <form id="feedbackForm" action="#" method="post">
-        <textarea name="feedback" rows="5" placeholder="Your Feedback" required></textarea><br>
+    <form id="feedbackForm" action="changeReview.jsp" method="post">
+        <input type="hidden" name="id" value="<%= user.getId() %>">
+        <h2 type="text" name="name" style="text-align: left; margin-bottom: 2px">
+            <%= user.getFname() + " " + user.getLname() %>
+        </h2>
+        <h3 type="text" name="name" style="text-align: left; margin-bottom: 10px; color: gray">
+            <%= "@" + user.getUsername() %>
+        </h3>
+        <textarea name="review" rows="5" placeholder="Your Feedback" required><% if(user.getReview() != null) out.print(user.getReview()); %></textarea><br>
         <button type="submit">Submit Feedback</button>
     </form>
 </div>
-<jsp:include page="navigationbar.jsp" />
-<script>
-const feedbackForm = document.getElementById('feedbackForm');
-
-// Submit feedback form
-feedbackForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(feedbackForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const feedback = formData.get('feedback');
-    console.log(`Name: ${name}, Email: ${email}, Feedback: ${feedback}`);
-    // Here you can perform further actions, such as sending the feedback data to a server
-});
-</script>
-
 </body>
 </html>
+

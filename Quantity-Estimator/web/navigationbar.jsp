@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JSP Page</title>
+<title>Navigation Bar</title>
 <style>
 * {
     margin: 0;
@@ -25,29 +25,30 @@ body {
     background-attachment: fixed;
 }
 
+.nav-logo{
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /*margin-left: 20px; /* Adjust margin as needed */
+    padding: 20px;
+}
+
 .nav {
-    position: fixed;
-    top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 100px;
-    line-height: 100px;
+    height: 60px;
     background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
     z-index: 100;
 }
 
-.nav-logo img{
-    width: 200px; 
-    height: auto;
-    position: absolute; 
-    top: 50%; 
-    right: 75%; 
-    transform: translate(-50%, -50%);
-}
-
 .nav-menu ul {
     display: flex;
+    align-items: center;
 }
 
 .nav-menu ul li {
@@ -59,7 +60,7 @@ body {
     font-weight: bold;
     color: #fff;
     padding-bottom: 15px;
-    margin: 0 25px;
+    margin: 0 15px; /* Adjust margin as needed */
     font-size: 18px;
 }
 
@@ -67,26 +68,47 @@ body {
 .active {
     border-bottom: 2px solid #fff;
 }
+
+.logout {
+    margin-right: 20px;
+}
+
+.logout a {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
 </style>
 </head>
 <body>
-<div class="wrapper"> 
+    
     <nav class="nav">
         <div class="nav-logo">
             <img src="img/Logo.png">
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="home.jsp" class="link active">Home</a></li>
+                <li><a href="#categories" class="link">Categories</a></li>
                 <li><a href="review.jsp" class="link">Review</a></li>
-                <li><a href="#" class="link">Services</a></li>
-                <li><a href="about.jsp" class="link">About</a></li>
+                <li><a href="home.jsp#about" class="link">About</a></li>
+                <li><a href="about.jsp" class="link">Our Team</a></li>
             </ul>
         </div>
+        <!-- Moved logout button outside of nav-menu -->
+        <div class="logout">
+            <a href="logout.jsp">Logout</a>
+        </div>
     </nav>
-</div>
+
+
 </body>
 </html>
+
+
 
 

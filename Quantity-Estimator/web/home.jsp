@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<title>Home</title>
 <style>
 *{
     margin: 0;
@@ -89,7 +89,7 @@ body{
     object-fit: cover;
 }
 
-.category-box a {
+.category-box span {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -105,23 +105,118 @@ body{
 }
 
 
-.topic{
+.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: 100vh; /* Adjust this value to your preference */
     background: rgba(55, 55, 55, 0.2);
 }
+  
+.top {
+    position: relative;
+}
+
 .top header {
     font-size: 40px; /* Change this value to your desired font size */
     color: white; /* Change color to white */
     text-align: center; /* Align text to the center */
 }
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #ffb50b77;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+
+.about-text{
+    width: 550px;
+    margin-left: 10px
+}
+  
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: #000;
+    justify-content: space-evenly;
+}
+.main img{
+    margin-right: 10px
+}
+
+.about-text h1{
+    color: #111;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span{
+    color: gray;
+}
+.about-text p{
+    text-align: justify;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 12px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: #ff9900;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #ffcc00;
+}
+            
+@media (max-width: 900px) {
+    
+    .main{
+        flex-direction: column;
+    }
+    
+    .main img{
+        margin-bottom: 30px;
+    }
+    
+}
+        
 
 </style>
 </head>
 <body>
-    <div class="topic">
+
+<jsp:include page="navigationbar.jsp" />
+<div class="topic">
+
     <div class="top">
         <header style="font-size: 40px;">THE BEST <br>CHOICE FOR CONSTRUCTION <br> PROJECTS</header>
     </div>
@@ -129,24 +224,59 @@ body{
 <section id="categories">
     <div class="wrapper">
         <h2 class="category-heading">Categories</h2>
+        
         <div class="category-box">
-            <img src="img/floor.jpeg" alt="Floor">
-            <a href="#floor">Floor</a>
+            <a href="roof_page_url">
+            <a href='floor.jsp'><img src="img/floor.jpeg" alt="Floor">
+            <span>Floor</span></a>
+        </a>
         </div>
         <div class="category-box">
-            <img src="img/roof.webp" alt="Roof">
-            <a href="#roof">Roof</a>
+            <a href="http://localhost:8080/Quantity-Estimator/roof.jsp">
+            <a href='roof.jsp'><img src="img/roof.webp" alt="Roof">
+            <span>Roof</span></a>
+            </a>
         </div>
         <div class="category-box">
-            <img src="img/wall.jpeg" alt="Wall">
-            <a href="#wall">Wall</a>
+            <a href="roof_page_url">
+            <a href='wall.jsp'><img src="img/wall.jpeg" alt="Wall">
+            <span>Wall</span></a>
+            </a>
         </div>
     </div>
 </section>
-<jsp:include page="navigationbar.jsp" />
-
-
-
+ <section class="about" id="about">
+            <div class="main">
+                <img src="img/Logo.png">
+                <div class="about-text">
+                    <h1>About us</h1>
+                    <h5>Development<span> and Designing Team</span></h5>
+                    <p>Our developing and designing team is a dynamic and collaborative group of professionals dedicated to crafting 
+                        innovative solutions and visually appealing experiences. Comprising skilled developers and creative designers, 
+                        our team works seamlessly to bring ideas to life, merging cutting-edge technology with aesthetic excellence. 
+                        In the realm of development, our experts excel in coding, problem-solving, and building robust, scalable applications. 
+                        On the design front, our creative minds transform concepts into captivating visuals, ensuring a user-centric and 
+                        aesthetically pleasing interface. Fueled by a passion for innovation and a commitment to excellence, our developing 
+                        and designing team is at the forefront of delivering solutions that not only meet but exceed expectations, creating a 
+                        digital landscape that is both functional and visually stunning.</p>
+                    
+                    <button type="button">Read More</button></a>
+                </div>
+            </div>
+                    
+        </section>
+<script>
+         
+     
+        
+    function scrollToSection(about) {
+        var section = document.getElementById(about);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>
 

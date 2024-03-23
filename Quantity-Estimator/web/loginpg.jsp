@@ -44,10 +44,13 @@
             background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
             z-index: 100;
         }
-        .nav-logo p{
-            color: white;
-            font-size: 25px;
-            font-weight: 600;
+        .nav-logo img{
+            width: 200px; 
+            height: auto;
+            position: absolute; 
+            top: 50%; 
+            right: 75%; 
+            transform: translate(-50%, -50%);
         }
         .nav-menu ul{
             display: flex;
@@ -257,15 +260,15 @@
         <div class="wrapper"> 
         <nav class="nav">
             <div class="nav-logo">
-                <p>BUILDAPPROX  .</p>
+                <img src="img/Logo.png">
             </div>
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="#" class="link active">Home</a></li>
                     <li><a href="#" class="link">Blog</a></li>
-                    <li><a href="reviewpg.jsp" class="link">Review</a></li>
+                    <li><a href="review.jsp" class="link">Review</a></li>
                     <li><a href="#" class="link">Services</a></li>
-                    <li><a href="aboutpg.jsp" class="link">About</a></li>
+                    <li><a href="about.jsp" class="link">About</a></li>
                 </ul>
             </div>
             <div class="nav-button">
@@ -284,17 +287,19 @@
                     <div class="top">
                         <header>Login</header>
                     </div>
+                    <form action="LoginServlet" method="post">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username or Email">
+                        <input type="text" class="input-field" placeholder="Username or Email" name="email">
                         <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password">
+                        <input type="password" class="input-field" placeholder="Password" name="password">
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     <div class="input-box">
                         <input type="submit" class="submit" value="Sign In"> 
                     </div>
+                    </form>
                     <div class="two-col">
                         <div class="one">
                             <input type="checkbox" id="login-check">
@@ -315,31 +320,33 @@
                     <div class="top">
                         <header>Sign Up</header>
                     </div>
-                    <div class="two-forms">
+                    <form action="SignupServlet" method="post">
+                        <div class="two-forms">
+                            <div class="input-box">
+                                <input type="text" class="input-field" placeholder="Firstname" name="fname" required>
+                                <i class="bx bx-user"></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" class="input-field" placeholder="Lastname" name="lname">
+                                <i class="bx bx-user"></i>
+                            </div>
+                        </div>
                         <div class="input-box">
-                            <input type="text" class="input-field" placeholder="Firstname">
+                            <input type="text" class="input-field" placeholder="Username" name="username" required>
                             <i class="bx bx-user"></i>
                         </div>
                         <div class="input-box">
-                            <input type="text" class="input-field" placeholder="Lastname">
-                            <i class="bx bx-user"></i>
+                            <input type="email" class="input-field" placeholder="Email" name="email" required>
+                            <i class="bx bx-envelope"></i>
                         </div>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username">
-                        <i class="bx bx-user"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Email">
-                        <i class="bx bx-envelope"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password">
-                        <i class="bx bx-lock-alt"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" class="submit" value="Register"> 
-                    </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Password" name="password" required>
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="Register"> 
+                        </div>
+                    </form>
                     <div class="two-col">
                         <div class="one">
                             <input type="checkbox" id="register-check">

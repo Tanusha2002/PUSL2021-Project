@@ -77,15 +77,17 @@
             border-radius: 30px;
             cursor: pointer;
             transition: .3s ease;
+            
         }
         .btn:hover{
             background: rgba(255, 255, 255, 0.3);
         }
         #registerBtn{
-            margin-left: 15px;
+            margin-left: 10px;
         }
         .btn.white-btn{
             background: rgba(255, 255, 255, 0.7);
+            margin-left: 650px;
         }
         .btn.btn.white-btn:hover{
             background: rgba(255, 255, 255, 0.5);
@@ -203,6 +205,7 @@
         @media only screen and (max-width: 786px){
             .nav-button{
                 display: none;
+                
             }
             .nav-menu.responsive{
                 top: 100px;
@@ -262,15 +265,7 @@
             <div class="nav-logo">
                 <img src="img/Logo.png">
             </div>
-            <div class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="#" class="link active">Home</a></li>
-                    <li><a href="#" class="link">Blog</a></li>
-                    <li><a href="review.jsp" class="link">Review</a></li>
-                    <li><a href="#" class="link">Services</a></li>
-                    <li><a href="about.jsp" class="link">About</a></li>
-                </ul>
-            </div>
+            
             <div class="nav-button">
                 <button class="btn white-btn" onclick="login()">Sign In</button>
                 <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>

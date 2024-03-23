@@ -12,6 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Roof</title>
 <script src="js/roof/claytile.js" type="text/javascript"></script>
+<script src="js/roof/sheet.js" type="text/javascript"></script>
 <script src="js/roof/slab.js" type="text/javascript"></script>
 <script src="js/roof.js" type="text/javascript"></script>
 <style>
@@ -181,7 +182,7 @@ footer {
     </div>
 
     
-        <input type="radio" id="option2" name="options" value="sheets">
+        <input type="radio" id="option2" name="options" value="sheet">
         <label for="option2">
             <img src="img/cementroofing.jpg" alt="Option 2">
             <span>Cement Roofing Sheet</span> <!-- Text under the image -->

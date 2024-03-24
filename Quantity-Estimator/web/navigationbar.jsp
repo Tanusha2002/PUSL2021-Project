@@ -44,7 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
     z-index: 100;
 }

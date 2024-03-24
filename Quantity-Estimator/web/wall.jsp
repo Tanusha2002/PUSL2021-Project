@@ -19,6 +19,7 @@ response.sendRedirect("loginpg.jsp");
 <script src="js/wall/clay.js" type="text/javascript"></script>
 <script src="js/estimationCat.js" type="text/javascript"></script>
 <script src="js/wall.js" type="text/javascript"></script>
+<link href="css/output.css" rel="stylesheet" type="text/css"/>
 <title>Wall</title>
 <style>
 * {

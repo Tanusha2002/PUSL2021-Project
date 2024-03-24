@@ -21,6 +21,7 @@ response.sendRedirect("loginpg.jsp");
 <script src="js/roof/sheet.js" type="text/javascript"></script>
 <script src="js/roof/slab.js" type="text/javascript"></script>
 <script src="js/roof.js" type="text/javascript"></script>
+<link href="css/output.css" rel="stylesheet" type="text/css"/>
 <script src="js/estimationCat.js" type="text/javascript"></script>
 <style>
 * {

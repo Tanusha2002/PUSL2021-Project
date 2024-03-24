@@ -112,7 +112,7 @@ body {
         </div>
         <!-- Moved logout button outside of nav-menu -->
         <div class="logout">
-            <a href="logout.jsp">Logout</a>
+            <a href="http://localhost:8080/Quantity-Estimator/logout.jsp">Logout</a>
         </div>
     </nav>
 

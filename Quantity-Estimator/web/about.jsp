@@ -28,7 +28,6 @@
                 font-family: 'Poppins', sans-serif;
             }
             body{
-                display: flex;
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
@@ -140,7 +139,10 @@
         </style>
     </head>
     <body>
+        <header>
         <jsp:include page="navigationbar.jsp" />
+    </header>
+        <main>
         <div class="wrap">
             <div class="title">
                 <h4>Our Team</h4>
@@ -259,6 +261,6 @@
                 </div>
             </div>
         </div>
-        
+                </main>
     </body>
 </html>

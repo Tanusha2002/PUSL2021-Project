@@ -6,7 +6,7 @@
 
 <%@page import="QE.connection.dbconnection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<% response.sendRedirect("/loginpg.jsp"); %>
+<% response.sendRedirect("http://localhost:8080/Quantity-Estimator/loginpg.jsp"); %>
 <!DOCTYPE html>
 <html>
     <head>

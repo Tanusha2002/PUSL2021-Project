@@ -23,25 +23,14 @@ function calculateFloor(){
         var noOfTiles = calculateTile(width, length, selectedSizeVarient);
         var concrete = calculateConcrete(width, length);
         var plaster = calculatePlastering(width, length);
-        
-        console.log("Floor Width:", width);
-        console.log("Floor Length:", length);
-        console.log("Selected Option:", selectedOption);
-    
-        console.log("No of Tiles:", noOfTiles);
-        console.log("Concrete - cement:", concrete[0]);
-        console.log("Concrete - Sand:", concrete[1]);
-        console.log("Plaster - cement:", plaster[0]);
-        console.log("Plaster - Sand:", plaster[1]);      
+
+        fetchProductDetails(noOfTiles[0], noOfTiles[1], true);
+        fetchProductDetails(11, Math.ceil(concrete[0]+plaster[0]));
+        fetchProductDetails(12, Math.ceil(concrete[1]+plaster[1]));      
     }else if (selectedOption == 'carpet'){
         var lengthOfCarpet = calculateCarpet(width, length);
         
-        console.log("Floor Width:", width);
-        console.log("Floor Length:", length);
-        console.log("Selected Option:", selectedOption);
-        
-        console.log("Length of the Carpet:", lengthOfCarpet[0]);
-        console.log("Unroll the Carpert parrallel to", lengthOfCarpet[1]);
+        fetchProductDetails(14, lengthOfCarpet[0], true);
     }else{
         //invalid option
     }

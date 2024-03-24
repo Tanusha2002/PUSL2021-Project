@@ -5,6 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="QE.model.User"%>
+<% User user =(User) session.getAttribute("loguser");
+if (user==null){
+response.sendRedirect("loginpg.jsp");
+    }
+    %>
 <!DOCTYPE html>
 
 <html lang="en">

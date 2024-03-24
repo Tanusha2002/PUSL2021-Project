@@ -64,7 +64,7 @@ body {
     color: #fff;
     padding-bottom: 15px;
     margin: 0 15px; /* Adjust margin as needed */
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .link:hover,

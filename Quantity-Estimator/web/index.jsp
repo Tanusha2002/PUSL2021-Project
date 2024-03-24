@@ -6,6 +6,7 @@
 
 <%@page import="QE.connection.dbconnection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% response.sendRedirect("/loginpg.jsp"); %>
 <!DOCTYPE html>
 <html>
     <head>

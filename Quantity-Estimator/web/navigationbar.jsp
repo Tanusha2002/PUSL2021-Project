@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -30,7 +31,7 @@ body {
 }
 
 .nav-logo img {
-    max-width: 200px; /* Adjust the maximum width as needed */
+    max-width: 300px; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     /*margin-left: 20px; /* Adjust margin as needed */
     padding: 20px;
@@ -41,7 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 100px; /* Increase the height of the navigation bar */
     background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
     z-index: 100;
 }
@@ -108,6 +109,7 @@ body {
 
 </body>
 </html>
+
 
 
 

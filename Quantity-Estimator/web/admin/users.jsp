@@ -3,16 +3,15 @@
     Created on : Mar 21, 2024, 6:28:11 PM
     Author     : Manushika
 --%>
-<%@page import="QE.model.User"%>
-<% User user =(User) session.getAttribute("loguser");
-if (user==null){
-response.sendRedirect("../loginpg.jsp");
-    }
-    %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <%@page import="QE.connection.dbconnection"%> <!-- Importing the dbconnection class -->
-
+<%@page import="QE.model.User"%>
+<% User user =(User) session.getAttribute("loguser");
+if (user==null || !"admin".equals(user.getRole())){
+response.sendRedirect("../loginpg.jsp");
+    }
+    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +22,9 @@ response.sendRedirect("../loginpg.jsp");
     <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    
+<jsp:include page="../navigationbar.jsp" />
+
 <section class="table">
     <h2 class="table_title">Users</h2>
     <div class="flex_table">

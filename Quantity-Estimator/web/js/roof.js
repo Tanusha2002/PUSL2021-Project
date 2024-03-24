@@ -9,8 +9,6 @@ function calculateRoof() {
     
     var selectedOption = document.querySelector('input[name="options"]:checked').value;
     
-    let est = [];
-    
     if(selectedOption == 'claytile'){
        var noOfTiles = calculateClayTile(width, length);    
        fetchProductDetails(noOfTiles[0], noOfTiles[1], true);
@@ -21,7 +19,12 @@ function calculateRoof() {
         fetchProductDetails(8, Xcombo[2]);
         fetchProductDetails(9, Xcombo[3]);
         
-    }else if (selectedOption == 'AlZn'){
+    }else if (selectedOption == 'ZnAl'){
+        var Xcombo = calculateSheet(width, length);              
+        fetchProductDetails(15, Xcombo[0], true);
+        fetchProductDetails(16, Xcombo[1]);
+        fetchProductDetails(17, Xcombo[2]);
+        fetchProductDetails(18, Xcombo[3]);
         
     }else if(selectedOption == 'slab'){
         var slab = calculateSlab(width, length);       

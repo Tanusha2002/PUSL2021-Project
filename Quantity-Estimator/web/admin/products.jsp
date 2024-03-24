@@ -10,10 +10,13 @@ response.sendRedirect("/loginpg.jsp");
     }
     %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="QE.connection.dbconnection"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="../js/admin/products.js" type="text/javascript"></script>
         <link href="../css/admin.css" rel="stylesheet" type="text/css"/>   
         <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
         <title>Products</title>
@@ -21,40 +24,54 @@ response.sendRedirect("/loginpg.jsp");
     <body>
         <main>
             <section class="table">
-                <h2 class="table_title">Roof</h2>
+                <h2 class="table_title">Products</h2>
                 <div class="flex_table">
                     <!-- Table header -->
                     <div class="table-row table-header">
-                        <div class="table-cell">Type</div>
-                        <div class="table-cell">Size</div>
-                        <div class="table-cell">Cost</div>
+                        <div class="table-cell email-cell">Raw material</div>
+                        <div class="table-cell">Unit</div>
+                        <div class="table-cell">Price</div>
                     </div>
                     <!-- Table data -->
-                    <div class="table-row">
-                        <div class="table-cell">Asbestos Sheet</div>
-                        <div class="table-cell">3.5ft x 6ft</div>
-                        <div class="table-cell">
-                            &#x20A8;<input type="number" id="" value="3900" placeholder="Enter new price">
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Asbestos Sheet</div>
-                        <div class="table-cell">3.5ft x 9ft</div>
-                        <div class="table-cell">
-                            &#x20A8;<input type="number" id="" value="4750" placeholder="Enter new price">
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Asbestos Sheet</div>
-                        <div class="table-cell">3.5ft x 12ft</div>
-                        <div class="table-cell">
-                            &#x20A8;<input type="number" id="" value="6500" placeholder="Enter new price">
-                        </div>
-                    </div>
-                    <!-- Add more rows as needed -->
-                </div>
-
+           <% 
+            Connection connection = null;
+            PreparedStatement preparedStatement = null;
+            ResultSet resultSet = null;
+            
+            try {
+                // Get connection from dbconnection class
+                connection = dbconnection.getConnection();
+                
+                // Query to retrieve user data
+                String query = "SELECT p.*, u.name FROM product p INNER JOIN units u ON p.units = u.id";
+                preparedStatement = connection.prepareStatement(query);
+                resultSet = preparedStatement.executeQuery();
+                
+                // Iterate through the result set and populate the table rows
+                while(resultSet.next()) {
+                    out.println("<div class='table-row'>");
+                    out.println("<div class='table-cell email-cell'>" + resultSet.getString("name") + "</div>");
+                    out.println("<div class='table-cell'>" + resultSet.getString("u.name") + "</div>");
+                    out.println("<div class='table-cell'>");
+                    out.println("&#x20A8;<input type='number' id='' onchange='changePrice(this, " + resultSet.getInt("id") + ")' value='" + resultSet.getDouble("price") + "' placeholder='Enter new price'>");
+                    out.println("</div>");
+                    out.println("</div>");
+                }
+            } catch (SQLException e) {
+                out.println("Error: " + e.getMessage());
+            } finally {
+                // Close the database connections
+                try {
+                    if(resultSet != null) resultSet.close();
+                    if(preparedStatement != null) preparedStatement.close();
+                    if(connection != null) connection.close();
+                } catch (SQLException e) {
+                    out.println("Error closing connection: " + e.getMessage());
+                }
+            }
+        %>
             </section>
         </main>
     </body>
 </html>
+

@@ -18,7 +18,7 @@ response.sendRedirect("../loginpg.jsp");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Admin | User</title>
-    <script src="../js/users.js" type="text/javascript"></script>
+    <script src="../js/admin/users.js" type="text/javascript"></script>
     <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
 </head>

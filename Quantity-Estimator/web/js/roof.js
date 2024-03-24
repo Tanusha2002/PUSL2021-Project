@@ -20,7 +20,7 @@ function calculateRoof() {
         fetchProductDetails(9, Xcombo[3]);
         
     }else if (selectedOption == 'ZnAl'){
-        var Xcombo = calculateSheet(width, length);              
+        var Xcombo = calculateSheetZnAl(width, length);              
         fetchProductDetails(15, Xcombo[0], true);
         fetchProductDetails(16, Xcombo[1]);
         fetchProductDetails(17, Xcombo[2]);

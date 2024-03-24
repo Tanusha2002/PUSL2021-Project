@@ -3,7 +3,12 @@
     Created on : Mar 16, 2024, 4:00:37 PM
     Author     : nalin
 --%>
-
+<%@page import="QE.model.User"%>
+<% User user =(User) session.getAttribute("loguser");
+if (user==null){
+response.sendRedirect("loginpg.jsp");
+    }
+    %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

@@ -31,11 +31,13 @@ function updateUI(products, qty, bool) {
     var row = document.createElement('tr');
     var nameCell = document.createElement('td');
     var quantityCell = document.createElement('td');
+    var unitCell = document.createElement('td');
     var costPerOneCell = document.createElement('td');
     var costCell = document.createElement('td');
 
     nameCell.textContent = products.name;
     quantityCell.textContent = qty;
+    unitCell.textContent = products.unit;
     costPerOneCell.textContent = products.price; // You need to fetch this from the server or calculate it
     var costPerOne = products.price; // Example: get the price from the product object
     var totalCost = qty * costPerOne; // Calculate total cost
@@ -43,6 +45,7 @@ function updateUI(products, qty, bool) {
     
     row.appendChild(nameCell);
     row.appendChild(quantityCell);
+    row.appendChild(unitCell);
     row.appendChild(costPerOneCell);
     row.appendChild(costCell);
 

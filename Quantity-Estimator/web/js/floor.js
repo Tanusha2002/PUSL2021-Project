@@ -19,19 +19,29 @@ function calculateFloor(){
     }
 
     
-    if(selectedOption == 'tile'){
-        var noOfTiles = calculateTile(width, length, selectedSizeVarient);
-        var concrete = calculateConcrete(width, length);
-        var plaster = calculatePlastering(width, length);
+    async function calculateAsync() {
+        if(selectedOption == 'tile'){
+            var noOfTiles = calculateTile(width, length, selectedSizeVarient);
+            var concrete = calculateConcrete(width, length);
+            var plaster = calculatePlastering(width, length);
 
-        fetchProductDetails(noOfTiles[0], noOfTiles[1], true);
-        fetchProductDetails(11, Math.ceil(concrete[0]+plaster[0]));
-        fetchProductDetails(12, Math.ceil(concrete[1]+plaster[1]));      
-    }else if (selectedOption == 'carpet'){
-        var lengthOfCarpet = calculateCarpet(width, length);
-        
-        fetchProductDetails(14, lengthOfCarpet[0], true);
-    }else{
-        //invalid option
+            await fetchProductDetails(noOfTiles[0], noOfTiles[1], true);
+            await wait(25);
+            await fetchProductDetails(11, Math.ceil(concrete[0]+plaster[0]));
+            await wait(25);
+            await fetchProductDetails(12, Math.ceil(concrete[1]+plaster[1])); 
+        }else if (selectedOption == 'carpet'){
+            var lengthOfCarpet = calculateCarpet(width, length);
+
+            await fetchProductDetails(14, lengthOfCarpet[0], true);
+        }else{
+            //invalid option
+        }
     }
+    
+    calculateAsync();
+}
+
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }

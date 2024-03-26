@@ -16,13 +16,13 @@ function calculateClayBricks(wHeight, wLength) {
 }
 
 function calculateClayCement(numBricks) {
-    const cementPerBrick = 50 / 100; // 50 kg of cement for 100 bricks
+    const cementPerBrick = 1 / 100; // 50 kg of cement for 100 bricks
     const cementNeeded = numBricks * cementPerBrick;
-    return cementNeeded;
+    return Math.ceil(cementNeeded);
 }
 
 function calculateClaySand(numBricks) {
-    const sandPerBrick = 1/800; // 1/8 cubic feet of sand for 100 bricks
+    const sandPerBrick = 12.5/100; // 1/8 cubic feet of sand for 100 bricks
     const sandNeeded = numBricks * sandPerBrick;
-    return sandNeeded;
+    return Math.ceil(sandNeeded);
 }

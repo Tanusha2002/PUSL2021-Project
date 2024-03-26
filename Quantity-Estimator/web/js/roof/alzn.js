@@ -4,7 +4,7 @@
  */
 
 
-function calculateSheetZnAL(rWidth, rLength) {
+function calculateSheetZnAl(rWidth, rLength) {
     const roofCombination = optimalRoof(rWidth).slice();
     const Y = numberOfSheetsY(rLength);
     

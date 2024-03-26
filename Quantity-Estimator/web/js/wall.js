@@ -11,23 +11,28 @@ function calculateWall(){
     // Get the selected radio button value
     var selectedOption = document.querySelector('input[name="options"]:checked').value;
     
+    async function calculateAsync() {
     if(selectedOption == 'clay'){
         var noOfBricks = calculateClayBricks(height, length);
         var cement = calculateClayCement(noOfBricks);
         var sand = calculateClaySand(noOfBricks); 
         
-        fetchProductDetails(2, noOfBricks, true);
-        fetchProductDetails(11, cement);
-        fetchProductDetails(12, sand);   
+        await fetchProductDetails(2, noOfBricks, true);
+        await wait(100);
+        await fetchProductDetails(11, cement);
+        await wait(100);
+        await fetchProductDetails(12, sand);   
         
     } else if(selectedOption == 'cement'){
         noOfBricks = calculateCementBricks(height, length);
         cement = calculateCementCement(noOfBricks);
         sand = calculateCementSand(noOfBricks); 
                
-        fetchProductDetails(1, noOfBricks, true);
-        fetchProductDetails(11, cement);
-        fetchProductDetails(12, sand);   
+        await fetchProductDetails(1, noOfBricks, true);
+        await wait(100);
+        await fetchProductDetails(11, cement);
+        await wait(100);
+        await fetchProductDetails(12, sand);   
     }else{
         //invalid option
     }
@@ -39,4 +44,13 @@ function calculateWall(){
     console.log("No of Bricks:", noOfBricks);
     console.log("Cement:", cement);
     console.log("Sand:", sand);
+    
+
+    }
+    
+    calculateAsync();    
+}
+
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }

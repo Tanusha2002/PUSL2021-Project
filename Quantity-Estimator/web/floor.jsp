@@ -213,18 +213,19 @@ footer {
             <tr>
                 <th>Raw materials</th>
                 <th>Quantity</th>
+                <th>Unit</th>
                 <th>Cost per One ($)</th>
                 <th>Cost ($)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td colspan="4">Not Calculated still</td>
+                <td colspan="5">Not Calculated still</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="3">Total Cost</td>
+                <td colspan="4">Total Cost</td>
                 <td><span id="totalCost">0</span></td>
             </tr>
         </tfoot>

@@ -190,11 +190,11 @@ footer {
 <section>
 <div class="contain">
     <div>
-        <label1 for="width">Height:</label1>
+        <label1 for="width">Height (ft):</label1>
         <input type="number" id="height" placeholder="Enter height">
     </div>    
     <div>
-        <label1 for="length">Length:</label1>
+        <label1 for="length">Length (ft):</label1>
         <input type="number" id="length" placeholder="Enter length">
     </div>
 

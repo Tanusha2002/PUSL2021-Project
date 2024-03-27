@@ -187,11 +187,11 @@ footer {
 <section>
 <div class="contain">
     <div>
-        <label1 for="width">Width:</label1>
+        <label1 for="width">Width (ft):</label1>
         <input type="number" id="width" placeholder="Enter width">
     </div>    
     <div>
-        <label1 for="length">Length:</label1>
+        <label1 for="length">Length (ft):</label1>
         <input type="number" id="length" placeholder="Enter length">
     </div>
     <button onclick="calculateFloor()">Calculate</button>

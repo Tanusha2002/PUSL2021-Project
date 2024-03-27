@@ -207,12 +207,12 @@ footer {
 <div class="contain">
     
     <div>
-        <label1 for="length">Length:</label1>
+        <label1 for="length">Length (ft):</label1>
         <input type="number" id="length" placeholder="Enter length">
     </div>
     <div>
-        <label1 for="width">Width:</label1>
-        <input type="number" id="width" placeholder="Enter width">
+        <label1 for="width">Width (ft) :</label1>
+        <input type="number" id="width" placeholder="Enter width (slope of the roof)">
     </div>
     <button onclick="calculateRoof()">Calculate</button>
     <div id="result"></div>

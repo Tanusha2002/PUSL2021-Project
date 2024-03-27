@@ -116,14 +116,6 @@ tr:nth-child(even) {
     border: none;
     background: transparent;
 }
-.contain {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 h1 {
     text-align: center;

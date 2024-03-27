@@ -7,6 +7,55 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Manushika
 */
 
-#output{
-    
+/* CSS for table design using IDs with rounded corners */
+#output {
+  width: 100%;
+}
+
+#output table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px; /* Adjust the radius as needed */
+  overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+#output table, #output th, #output td {
+  border: 1px solid black;
+}
+
+#output th, #output td {
+  padding: 10px;
+}
+
+/* Colors for table */
+#output table {
+  background-color: #ff9f00bb;
+}
+
+#output th {
+  background-color: black;
+  color: white;
+}
+
+#output td {
+  background-color: #ff9f00bb;
+  color: black;
+}
+
+.contain{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ff9f00bb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contain input{
+    width: calc(100% - 105px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: white;
+    background: black;
 }

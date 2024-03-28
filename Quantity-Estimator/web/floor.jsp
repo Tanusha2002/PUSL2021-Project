@@ -206,8 +206,8 @@ footer {
                 <th>Raw materials</th>
                 <th>Quantity</th>
                 <th>Unit</th>
-                <th>Cost per One ($)</th>
-                <th>Cost ($)</th>
+                <th>Cost per One (Rs)</th>
+                <th>Cost (Rs)</th>
             </tr>
         </thead>
         <tbody>
